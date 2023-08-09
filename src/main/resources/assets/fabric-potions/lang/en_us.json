@@ -1,0 +1,7 @@
+{
+  "effect.fabric_potions.health_decrease" :  "Health decrease",
+  "effect.fabric_potions.bleed":             "Bleed",
+  "effect.fabric_potions.well_fed":          "Well fed",
+  "effect.fabric_potions.trueshot":          "True shot",
+  "effect.fabric_potions.klutz":             "Klutz"
+}

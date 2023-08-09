@@ -1,0 +1,35 @@
+package binaris.fabric_potions.effects;
+
+import binaris.fabric_potions.Fabric_Potions;
+import binaris.fabric_potions.config.Fabric_PotionsConfig;
+import binaris.fabric_potions.registry.Fabric_PotionsEffects;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class Bleed extends StatusEffect {
+    public Bleed() {
+        super(StatusEffectCategory.HARMFUL, 1663425);
+
+        if(Fabric_PotionsConfig.CONFIG.getOrDefault("bleed.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "bleed"), this);
+        }
+    }
+
+    @Override
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        if(this == Fabric_PotionsEffects.BLEED){
+            if(entity.getWorld().getTime() % 60 == 0){
+                entity.damage(entity.getDamageSources().magic(), 2.0F);
+            }
+        }
+    }
+
+    @Override
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+        return true;
+    }
+}
