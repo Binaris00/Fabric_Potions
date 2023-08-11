@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class Fabric_Potions implements ModInitializer {
 
 	public static final String MOD_ID = "fabric_potions";
-    public static final Logger LOGGER = LoggerFactory.getLogger("fabric-potions");
+    public static final Logger LOGGER = LoggerFactory.getLogger("fabric_potions");
 
 	@Override
 	public void onInitialize() {

@@ -1,0 +1,10 @@
+{
+  "effect.fabric_potions.health_decrease" :  "Health decrease",
+  "effect.fabric_potions.bleed":             "Bleed",
+  "effect.fabric_potions.well_fed":          "Well fed",
+  "effect.fabric_potions.trueshot":          "True shot",
+  "effect.fabric_potions.klutz":             "Klutz",
+  "effect.fabric_potions.enderman_essence":  "Enderman essence",
+  "effect.fabric_potions.repairing":         "Repairing",
+  "effect.fabric_potions.broken_armor":      "Broken armor"
+}

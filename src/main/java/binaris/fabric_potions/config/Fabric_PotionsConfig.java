@@ -34,6 +34,11 @@ public class Fabric_PotionsConfig {
         configs.addKeyValuePair(new Pair<>("klutz.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("klutz.reduce_damage", 0.45), "float");
 
+        configs.emptyLine();
+
+        configs.addComment("Enderman essence effect config");
+        configs.addKeyValuePair(new Pair<>("enderman_essence_enable", true), "boolean");
+
     }
 
 }

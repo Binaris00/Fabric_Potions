@@ -8,14 +8,15 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class TrueShot extends StatusEffect {
-    public TrueShot() {
-        super(StatusEffectCategory.BENEFICIAL, 975823);
+public class Broken_Armor extends StatusEffect {
+    public Broken_Armor() {
+        super(StatusEffectCategory.HARMFUL, 7299122);
 
-        if(Fabric_PotionsConfig.CONFIG.getOrDefault("trueshot.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "trueshot"), this);
+        if(Fabric_PotionsConfig.CONFIG.getOrDefault("broken_armor.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "broken_armor"), this);
         }
     }
+
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
