@@ -2,29 +2,28 @@ package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
 import binaris.fabric_potions.config.Fabric_PotionsConfig;
-import binaris.fabric_potions.registry.Fabric_PotionsEffects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Bleed extends StatusEffect {
-    public Bleed() {
-        super(StatusEffectCategory.HARMFUL, 1663425);
+public class Antidote extends StatusEffect {
+    public Antidote() {
+        super(StatusEffectCategory.BENEFICIAL, 5420996);
 
-        if(Fabric_PotionsConfig.CONFIG.getOrDefault("bleed.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "bleed"), this);
+        if(Fabric_PotionsConfig.CONFIG.getOrDefault("antidote.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "antidote"), this);
         }
     }
 
+
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if(this == Fabric_PotionsEffects.BLEED){
-            if(entity.getWorld().getTime() % 60 == 0){
-                entity.damage(entity.getDamageSources().magic(), (float) Fabric_PotionsConfig.CONFIG.getOrDefault("bleed.damage", 2.0F));
-            }
+        if(entity.hasStatusEffect(StatusEffects.POISON)){
+            entity.removeStatusEffect(StatusEffects.POISON);
         }
     }
 

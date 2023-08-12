@@ -17,4 +17,8 @@ public class Solid_Body extends StatusEffect {
         }
     }
 
+    @Override
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+        return true;
+    }
 }

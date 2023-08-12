@@ -23,7 +23,7 @@ public class Well_Fed extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity player) {
             if(entity.getWorld().getTime() % 40 == 0) {
-                player.getHungerManager().add(amplifier + 1, 0.0F);
+                player.getHungerManager().add(amplifier + Fabric_PotionsConfig.CONFIG.getOrDefault("well_fed.value", 1), 0.0F);
             }
         }
     }

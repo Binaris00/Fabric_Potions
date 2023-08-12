@@ -24,13 +24,13 @@ public class Repairing extends StatusEffect {
         if(entity.getWorld().getTime() % 40 == 0) {
             for (ItemStack stack : entity.getArmorItems()) {
                 if (!stack.isEmpty()) {
-                    stack.setDamage(stack.getDamage() - amplifier + 1);
+                    stack.setDamage(stack.getDamage() - amplifier + Fabric_PotionsConfig.CONFIG.getOrDefault("repairing.value", 1));
                 }
             }
 
             for(ItemStack stack : entity.getHandItems()){
                 if (!stack.isEmpty()) {
-                    stack.setDamage(stack.getDamage() - amplifier + 1);
+                    stack.setDamage(stack.getDamage() - amplifier + Fabric_PotionsConfig.CONFIG.getOrDefault("repairing.value", 1));
                 }
             }
         }

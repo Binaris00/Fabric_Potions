@@ -6,5 +6,7 @@
   "effect.fabric_potions.klutz":             "Klutz",
   "effect.fabric_potions.enderman_essence":  "Enderman essence",
   "effect.fabric_potions.repairing":         "Repairing",
-  "effect.fabric_potions.broken_armor":      "Broken armor"
+  "effect.fabric_potions.broken_armor":      "Broken armor",
+  "effect.fabric_potions.purity":            "Purity",
+  "effect.fabric_potions.antidote":          "Antidote"
 }
