@@ -8,12 +8,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Gravitation extends StatusEffect {
-    public Gravitation() {
-        super(StatusEffectCategory.NEUTRAL, 167168167);
+public class Diamond_skin extends StatusEffect {
+    public Diamond_skin() {
+        super(StatusEffectCategory.BENEFICIAL, 36171181);
 
-        if(Fabric_PotionsConfig.CONFIG.getOrDefault("gravitation.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "gravitation"), this);
+        if(Fabric_PotionsConfig.CONFIG.getOrDefault("diamond_skin.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "diamond_skin"), this);
         }
     }
 }

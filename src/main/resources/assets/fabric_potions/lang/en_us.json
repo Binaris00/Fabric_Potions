@@ -4,9 +4,12 @@
   "effect.fabric_potions.well_fed":          "Well fed",
   "effect.fabric_potions.trueshot":          "True shot",
   "effect.fabric_potions.klutz":             "Klutz",
-  "effect.fabric_potions.enderman_essence":  "Enderman essence",
+  "effect.fabric_potions.enderman_essence":  "Enderman soul",
   "effect.fabric_potions.repairing":         "Repairing",
   "effect.fabric_potions.broken_armor":      "Broken armor",
   "effect.fabric_potions.purity":            "Purity",
-  "effect.fabric_potions.antidote":          "Antidote"
+  "effect.fabric_potions.antidote":          "Antidote",
+  "effect.fabric_potions.gravitation":       "Gravitation",
+  "effect.fabric_potions.flight":            "Flight",
+  "effect.fabric_potions.diamond_skin":      "Diamond skin"
 }

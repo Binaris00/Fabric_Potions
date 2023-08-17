@@ -68,6 +68,17 @@ public class Fabric_PotionsConfig {
 
         configs.addComment("Antidote effect config");
         configs.addKeyValuePair(new Pair<>("antidote.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Flight");
+        configs.addKeyValuePair(new Pair<>("flight.enable", true), "boolean");
+
+
+        configs.addComment("Vanilla potions");
+        configs.addKeyValuePair(new Pair<>("haste_potion.enable", false), "boolean");
+        configs.addKeyValuePair(new Pair<>("haste_potion.duration", 3600), "ticks");
+
     }
 
 }
