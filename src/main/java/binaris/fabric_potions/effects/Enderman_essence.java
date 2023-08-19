@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_PotionsConfig;
+import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
@@ -20,7 +20,7 @@ public class Enderman_essence extends StatusEffect {
     public Enderman_essence() {
         super(StatusEffectCategory.NEUTRAL, 15619171);
 
-        if(Fabric_PotionsConfig.CONFIG.getOrDefault("enderman_essence_enable", true)){
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_essence.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "enderman_essence"), this);
         }
     }
@@ -36,11 +36,10 @@ public class Enderman_essence extends StatusEffect {
         double e = entity.getY();
         double f = entity.getZ();
 
-        Fabric_Potions.LOGGER.info("Player coords: "+ "X:"+d+"Y:"+e+"Z:"+f);
         for (int i = 0; i < 16; ++i) {
-            double g = entity.getX() + (entity.getRandom().nextDouble() - 0.5) * 128.0;
+            double g = entity.getX() + (entity.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_essence.radius", 128.0);
             double h = MathHelper.clamp(entity.getY() + (double) (entity.getRandom().nextInt(16) - 8), (double) entity.getWorld().getBottomY(), (double) (entity.getWorld().getBottomY() + ((ServerWorld) entity.getWorld()).getLogicalHeight() - 1));
-            double j = entity.getZ() + (entity.getRandom().nextDouble() - 0.5) * 128.0;
+            double j = entity.getZ() + (entity.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_essence.radius", 128.0);
             if (entity.hasVehicle()) {
                 entity.stopRiding();
             }

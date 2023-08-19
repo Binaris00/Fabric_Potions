@@ -11,5 +11,6 @@
   "effect.fabric_potions.antidote":          "Antidote",
   "effect.fabric_potions.gravitation":       "Gravitation",
   "effect.fabric_potions.flight":            "Flight",
-  "effect.fabric_potions.diamond_skin":      "Diamond skin"
+  "effect.fabric_potions.diamond_skin":      "Diamond skin",
+  "effect.fabric_potions.vulnerability":     "Vulnerability"
 }

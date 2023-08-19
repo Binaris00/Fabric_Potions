@@ -1,6 +1,6 @@
 package binaris.fabric_potions.registry;
 
-import binaris.fabric_potions.config.Fabric_PotionsConfig;
+import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import binaris.fabric_potions.effects.*;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -22,22 +22,25 @@ public class Fabric_PotionsEffects {
     public static StatusEffect GRAVITATION;
     public static StatusEffect FLIGHT;
     public static StatusEffect DIAMOND_SKIN;
+    public static StatusEffect VULNERABILITY;
+    public static StatusEffect CORROSION;
 
     public static void registerEffects(){
-        HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Fabric_PotionsConfig.CONFIG.getOrDefault("health_decrease.hearths", -4.0), EntityAttributeModifier.Operation.ADDITION);
+        HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("health_decrease.hearths", -4.0), EntityAttributeModifier.Operation.ADDITION);
         BLEED = new Bleed();
         WELL_FED = new Well_Fed();
         TRUESHOT = new TrueShot();
         KLUTZ = new Klutz();
         ENDERMAN_ESSENCE = new Enderman_essence();
         REPAIRING = new Repairing();
-        BROKEN_ARMOR = new Broken_Armor().addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "5fA8F46A-388E-11EE-BE56-0242AC120002", Fabric_PotionsConfig.CONFIG.getOrDefault("broken_armor", -2.0), EntityAttributeModifier.Operation.ADDITION);
-        SOLID_BODY = new Solid_Body().addAttributeModifier(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, "4AD16B22-3892-11EE-BE56-0242AC120002", 1.0, EntityAttributeModifier.Operation.ADDITION);
+        BROKEN_ARMOR = new Broken_Armor().addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "5fA8F46A-388E-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("broken_armor.value", -2.0), EntityAttributeModifier.Operation.ADDITION);
+        SOLID_BODY = new Solid_Body().addAttributeModifier(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, "4AD16B22-3892-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("solid_body.value", 1.0), EntityAttributeModifier.Operation.ADDITION);
         PURITY = new Purity();
         ANTIDOTE = new Antidote();
         GRAVITATION = new Gravitation();
         FLIGHT = new Flight();
-        DIAMOND_SKIN = new Diamond_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, "949E9B54-3C92-11EE-BE56-0242AC120002", 1.0, EntityAttributeModifier.Operation.ADDITION);
-
+        DIAMOND_SKIN = new Diamond_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, "949E9B54-3C92-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("diamond_skin.value", 1.0), EntityAttributeModifier.Operation.ADDITION);
+        VULNERABILITY = new Vulnerability();
+        CORROSION = new Corrosion();
     }
 }

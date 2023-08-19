@@ -1,7 +1,9 @@
 package binaris.fabric_potions.mixin;
 
+import binaris.fabric_potions.Fabric_Potions;
 import binaris.fabric_potions.registry.Fabric_PotionsEffects;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.Vec3d;
@@ -12,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
@@ -24,6 +27,7 @@ public abstract class LivingEntityMixin {
 
     @ModifyVariable(method = "travel", at = @At("STORE"))
     private double inject(double q, Vec3d vec3d6){
+        // Gravitation
         if(this.hasStatusEffect(Fabric_PotionsEffects.GRAVITATION)){
             if(livingEntity instanceof PlayerEntity player && player.isSneaking()){
                 switch(livingEntity.getStatusEffect(Fabric_PotionsEffects.GRAVITATION).getAmplifier()){
@@ -45,8 +49,17 @@ public abstract class LivingEntityMixin {
     }
     @Inject(at = @At("HEAD"), method = "tickMovement")
     public void fallDamage(CallbackInfo ci){
+        // Gravitation
         if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.GRAVITATION)){
             livingEntity.onLanding();
+        }
+    }
+
+    @Inject(at = @At("RETURN"), method = "modifyAppliedDamage", cancellable = true)
+    public void moreDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir){
+        // Vulnerability
+        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.VULNERABILITY)){
+            cir.setReturnValue((float) (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(Fabric_PotionsEffects.VULNERABILITY).getAmplifier() + 1))));
         }
     }
 }

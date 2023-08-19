@@ -1,6 +1,6 @@
 package binaris.fabric_potions.mixin;
 
-import binaris.fabric_potions.config.Fabric_PotionsConfig;
+import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import binaris.fabric_potions.registry.Fabric_PotionsEffects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
@@ -23,17 +23,17 @@ public class PersistentProjectileMixin {
             //True Shot
             if(user.hasStatusEffect(Fabric_PotionsEffects.TRUESHOT)){
                 persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() *
-                        Fabric_PotionsConfig.CONFIG.getOrDefault("trueshot.base_damage", 1.15F) + user.getStatusEffect(Fabric_PotionsEffects.TRUESHOT).getAmplifier());
+                        Fabric_Potions_EffectConfig.CONFIG.getOrDefault("trueshot.base_damage", 1.15F) + user.getStatusEffect(Fabric_PotionsEffects.TRUESHOT).getAmplifier());
             }
 
             //Klutz
             if(user.hasStatusEffect(Fabric_PotionsEffects.KLUTZ)){
                 switch (user.getStatusEffect(Fabric_PotionsEffects.KLUTZ).getAmplifier()){
-                    case 0 -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_PotionsConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45));
+                    case 0 -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45));
 
-                    case 1 -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_PotionsConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 2);
+                    case 1 -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 2);
 
-                    default -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_PotionsConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 3);
+                    default -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 3);
                 }
             }
         }

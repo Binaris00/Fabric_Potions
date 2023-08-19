@@ -10,12 +10,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Repairing extends StatusEffect {
-    public Repairing() {
-        super(StatusEffectCategory.BENEFICIAL, 979797);
+public class Corrosion extends StatusEffect {
+    public Corrosion() {
+        super(StatusEffectCategory.HARMFUL, 515151);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "repairing"), this);
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("corrosion.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "corrosion"), this);
         }
     }
 
@@ -24,13 +24,13 @@ public class Repairing extends StatusEffect {
         if(entity.getWorld().getTime() % 40 == 0) {
             for (ItemStack stack : entity.getArmorItems()) {
                 if (!stack.isEmpty()) {
-                    stack.setDamage(stack.getDamage() - amplifier + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.value", 1));
+                    stack.setDamage(stack.getDamage() + amplifier + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("corrosion.value", 1));
                 }
             }
 
             for(ItemStack stack : entity.getHandItems()){
                 if (!stack.isEmpty()) {
-                    stack.setDamage(stack.getDamage() - amplifier + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.value", 1));
+                    stack.setDamage(stack.getDamage() + amplifier + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("corrosion.value", 1));
                 }
             }
         }
