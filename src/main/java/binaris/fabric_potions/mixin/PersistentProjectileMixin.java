@@ -5,6 +5,7 @@ import binaris.fabric_potions.registry.Fabric_PotionsEffects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.util.hit.EntityHitResult;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,28 +16,23 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class PersistentProjectileMixin {
     @Unique
     PersistentProjectileEntity persistentProjectileEntity = (PersistentProjectileEntity) (Object) this;
-
-    @Inject(at = @At("HEAD"), method = "tick")
-    public void checkTick(CallbackInfo ci){
+    @Inject(at = @At("HEAD"), method = "onEntityHit")
+    public void checkDamage(EntityHitResult entityHitResult, CallbackInfo ci){
         if(persistentProjectileEntity.getOwner() instanceof LivingEntity user && persistentProjectileEntity instanceof ArrowEntity){
 
             //True Shot
-            if(user.hasStatusEffect(Fabric_PotionsEffects.TRUESHOT)){
-                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() *
-                        Fabric_Potions_EffectConfig.CONFIG.getOrDefault("trueshot.base_damage", 1.15F) + user.getStatusEffect(Fabric_PotionsEffects.TRUESHOT).getAmplifier());
+            if(user.hasStatusEffect(Fabric_PotionsEffects.TRUESHOT)) {
+                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + user.getStatusEffect(Fabric_PotionsEffects.TRUESHOT).getAmplifier() + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("trueshot.base_damage", 1.3));
             }
 
             //Klutz
             if(user.hasStatusEffect(Fabric_PotionsEffects.KLUTZ)){
-                switch (user.getStatusEffect(Fabric_PotionsEffects.KLUTZ).getAmplifier()){
-                    case 0 -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45));
-
-                    case 1 -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 2);
-
-                    default -> persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 3);
+                if (user.getStatusEffect(Fabric_PotionsEffects.KLUTZ).getAmplifier() == 0) {
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45));
+                } else {
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 2);
                 }
             }
         }
     }
-
 }

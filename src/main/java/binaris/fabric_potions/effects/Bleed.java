@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Bleed extends StatusEffect {
     public Bleed() {
-        super(StatusEffectCategory.HARMFUL, 1663425);
+        super(StatusEffectCategory.HARMFUL, 41099030);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "bleed"), this);
@@ -22,8 +22,8 @@ public class Bleed extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if(this == Fabric_PotionsEffects.BLEED){
-            if(entity.getWorld().getTime() % Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.time", 60) == 0){
-                entity.damage(entity.getDamageSources().magic(), (float) Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.damage", 2.0F));
+            if(entity.getWorld().getTime() % Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.time", 40) / (entity.getStatusEffect(Fabric_PotionsEffects.BLEED).getAmplifier() + 1) == 0){
+                entity.damage(entity.getDamageSources().magic(), (float) Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.damage", 3.0F) + entity.getStatusEffect(Fabric_PotionsEffects.BLEED).getAmplifier());
             }
         }
     }

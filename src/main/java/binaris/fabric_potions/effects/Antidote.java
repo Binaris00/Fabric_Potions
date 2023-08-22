@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Antidote extends StatusEffect {
     public Antidote() {
-        super(StatusEffectCategory.BENEFICIAL, 5420996);
+        super(StatusEffectCategory.BENEFICIAL, 11125592);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("antidote.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "antidote"), this);

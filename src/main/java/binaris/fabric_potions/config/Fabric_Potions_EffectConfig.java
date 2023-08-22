@@ -20,8 +20,8 @@ public class Fabric_Potions_EffectConfig {
 
         configs.addComment("Bleed effect config");
         configs.addKeyValuePair(new Pair<>("bleed.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("bleed.time", 60), "tick");
-        configs.addKeyValuePair(new Pair<>("bleed.damage", 2.0F), "float");
+        configs.addKeyValuePair(new Pair<>("bleed.time", 40), "tick");
+        configs.addKeyValuePair(new Pair<>("bleed.damage", 3.0F), "float");
 
         configs.emptyLine();
 
@@ -89,7 +89,7 @@ public class Fabric_Potions_EffectConfig {
 
         configs.addComment("True Shot effect config");
         configs.addKeyValuePair(new Pair<>("trueshot.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("trueshot.base_damage", 1.15F), "float");
+        configs.addKeyValuePair(new Pair<>("trueshot.base_damage", 1.3), "float");
 
         configs.emptyLine();
 
