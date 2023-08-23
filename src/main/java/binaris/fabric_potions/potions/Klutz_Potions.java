@@ -1,6 +1,7 @@
 package binaris.fabric_potions.potions;
 
 import binaris.fabric_potions.Fabric_Potions;
+import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import binaris.fabric_potions.config.Fabric_Potions_PotionsConfig;
 import binaris.fabric_potions.mixin.BrewingRecipeRegistryMixin;
 import binaris.fabric_potions.registry.Fabric_PotionsEffects;
@@ -17,11 +18,11 @@ public class Klutz_Potions extends Potion {
     public static Potion LONG_KLUTZ;
 
     public Klutz_Potions(){
-        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("klutz_potion.enable", true)){
+        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("klutz_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.enable", true)){
             KLUTZ = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "klutz_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.KLUTZ, 1800, 0)));
             BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Trueshot_Potions.TRUESHOT, Items.FERMENTED_SPIDER_EYE, KLUTZ);
         }
-        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("long_klutz_potion.enable", true)){
+        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("long_klutz_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.enable", true)){
             LONG_KLUTZ = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "long_klutz_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.KLUTZ, 4800, 0)));
             BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(KLUTZ, Items.REDSTONE, LONG_KLUTZ);
         }

@@ -43,5 +43,12 @@ public class Fabric_Potions_PotionsConfig {
         configs.addComment("Klutz potion");
         configs.addKeyValuePair(new Pair<>("klutz_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_klutz_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Gravitation potion");
+        configs.addKeyValuePair(new Pair<>("gravitation_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_gravitation_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("strong_gravitation_potion.enable", true), "boolean");
     }
 }

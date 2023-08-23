@@ -10,6 +10,7 @@ public class Fabric_PotionsEffectsPotions {
     public static Potion BLEED;
     public static Potion TRUESHOT;
     public static Potion KLUTZ;
+    public static Potion GRAVITATION;
 
     public static void registerPotions(){
 
@@ -18,5 +19,6 @@ public class Fabric_PotionsEffectsPotions {
         BLEED = new Bleed_Potions();
         TRUESHOT = new Trueshot_Potions();
         KLUTZ = new Klutz_Potions();
+        GRAVITATION = new Gravitation_Potions();
     }
 }
