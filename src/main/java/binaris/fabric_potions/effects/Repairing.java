@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Repairing extends StatusEffect {
     public Repairing() {
-        super(StatusEffectCategory.BENEFICIAL, 979797);
+        super(StatusEffectCategory.BENEFICIAL, 90122227);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "repairing"), this);

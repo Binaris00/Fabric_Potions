@@ -50,5 +50,34 @@ public class Fabric_Potions_PotionsConfig {
         configs.addKeyValuePair(new Pair<>("gravitation_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_gravitation_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("strong_gravitation_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Broken armor potion");
+        configs.addKeyValuePair(new Pair<>("broken_armor_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_broken_armor_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Corrosion potion (Disabled by default)");
+        configs.addKeyValuePair(new Pair<>("corrosion_potion.enable", false), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_corrosion_potion.enable", false), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Repairing potion (Disabled by default)");
+        configs.addKeyValuePair(new Pair<>("repairing_potion.enable", false), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_repairing_potion.enable", false), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Diamond skin potion");
+        configs.addKeyValuePair(new Pair<>("diamond_skin_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_diamond_skin_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Enderman essence potion");
+        configs.addKeyValuePair(new Pair<>("enderman_essence_potion.enable", true), "boolean");
     }
 }

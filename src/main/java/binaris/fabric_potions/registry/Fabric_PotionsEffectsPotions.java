@@ -11,6 +11,10 @@ public class Fabric_PotionsEffectsPotions {
     public static Potion TRUESHOT;
     public static Potion KLUTZ;
     public static Potion GRAVITATION;
+    public static Potion BROKEN_ARMOR;
+    public static Potion REPAIRING;
+    public static Potion CORROSION;
+    public static Potion DIAMOND_SKIN;
 
     public static void registerPotions(){
 
@@ -20,5 +24,9 @@ public class Fabric_PotionsEffectsPotions {
         TRUESHOT = new Trueshot_Potions();
         KLUTZ = new Klutz_Potions();
         GRAVITATION = new Gravitation_Potions();
+        BROKEN_ARMOR = new BrokenArmor_Potions();
+        REPAIRING = new Repairing_Potions();
+        CORROSION = new Corrosion_Potions();
+        DIAMOND_SKIN = new DiamondSkin_Potions();
     }
 }

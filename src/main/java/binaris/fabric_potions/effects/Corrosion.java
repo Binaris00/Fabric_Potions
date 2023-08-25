@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Corrosion extends StatusEffect {
     public Corrosion() {
-        super(StatusEffectCategory.HARMFUL, 515151);
+        super(StatusEffectCategory.HARMFUL, 13033099);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("corrosion.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "corrosion"), this);

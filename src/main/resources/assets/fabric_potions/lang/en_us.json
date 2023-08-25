@@ -97,7 +97,14 @@
   "item.minecraft.potion.effect.strong_gravitation_potion":           "Potion of Gravitation",
   "item.minecraft.splash_potion.effect.gravitation_potion":           "Splash Potion of Gravitation",
   "item.minecraft.splash_potion.effect.long_gravitation_potion":      "Splash Potion of Gravitation",
-  "item.minecraft.splash_potion.effect.strong_gravitation_potion":    "Splash Potion of Gravitation"
+  "item.minecraft.splash_potion.effect.strong_gravitation_potion":    "Splash Potion of Gravitation",
 
-
+  "item.minecraft.tipped_arrow.effect.broken_armor_potion":           "Arrow of Broken armor",
+  "item.minecraft.tipped_arrow.effect.long_broken_armor_potion":      "Arrow of Broken armor",
+  "item.minecraft.lingering_potion.effect.broken_armor_potion":       "Lingering Potion of Broken armor",
+  "item.minecraft.lingering_potion.effect.long_broken_armor_potion":  "Lingering Potion of Broken armor",
+  "item.minecraft.potion.effect.broken_armor_potion":                 "Potion of Broken armor",
+  "item.minecraft.potion.effect.long_broken_amor_potion":             "Potion of Broken armor",
+  "item.minecraft.splash_potion.effect.broken_armor_potion":          "Splash Potion of Broken armor",
+  "item.minecraft.splash_potion.effect.long_broken_armor_potion":     "Splash Potion of Broken armor"
 }
