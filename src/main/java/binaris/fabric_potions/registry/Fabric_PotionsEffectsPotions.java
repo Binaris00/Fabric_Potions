@@ -15,7 +15,12 @@ public class Fabric_PotionsEffectsPotions {
     public static Potion REPAIRING;
     public static Potion CORROSION;
     public static Potion DIAMOND_SKIN;
-
+    public static Potion ENDERMAN_ESSENCE;
+    public static Potion FLIGHT;
+    public static Potion HEALTH_DECREASE;
+    public static Potion VULNERABILITY;
+    public static Potion WELL_FED;
+    public static Potion SOLID_BODY;
     public static void registerPotions(){
 
         ANTIDOTE = new Antidote_Potions();
@@ -28,5 +33,11 @@ public class Fabric_PotionsEffectsPotions {
         REPAIRING = new Repairing_Potions();
         CORROSION = new Corrosion_Potions();
         DIAMOND_SKIN = new DiamondSkin_Potions();
+        ENDERMAN_ESSENCE = new EndermanEssence_Potions();
+        FLIGHT = new Flight_Potions();
+        HEALTH_DECREASE = new HealthDecrease_Potions();
+        VULNERABILITY = new Vulnerability_Potions();
+        WELL_FED = new WellFed_Potions();
+        SOLID_BODY = new SolidBody_Potions();
     }
 }

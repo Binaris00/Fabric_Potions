@@ -28,7 +28,7 @@ public class Gravitation_Potions extends Potion {
             BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(GRAVITATION, Items.REDSTONE, LONG_GRAVITATION);
         }
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("strong_gravitation_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("gravitation.enable", true)){
-            STRONG_GRAVITATION = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "strong_gravitation"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.GRAVITATION, 1000, 1)));
+            STRONG_GRAVITATION = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "strong_gravitation_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.GRAVITATION, 1000, 1)));
             BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(GRAVITATION, Items.GLOWSTONE_DUST, STRONG_GRAVITATION);
         }
     }

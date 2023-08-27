@@ -50,7 +50,7 @@ public class Fabric_Potions_EffectConfig {
         configs.emptyLine();
 
         configs.addComment("Flight");
-        configs.addKeyValuePair(new Pair<>("flight.enable", false), "boolean");
+        configs.addKeyValuePair(new Pair<>("flight.enable", true), "boolean");
 
         configs.emptyLine();
 

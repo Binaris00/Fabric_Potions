@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class Solid_Body extends StatusEffect {
     public Solid_Body() {
-        super(StatusEffectCategory.BENEFICIAL, 21621946);
+        super(StatusEffectCategory.BENEFICIAL, 0x0f0a4a);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("solid_body.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "solid_body"), this);

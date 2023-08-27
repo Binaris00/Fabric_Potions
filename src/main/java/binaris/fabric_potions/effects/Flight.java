@@ -13,9 +13,9 @@ import net.minecraft.util.Identifier;
 
 public class Flight extends StatusEffect {
     public Flight() {
-        super(StatusEffectCategory.BENEFICIAL, 151237252);
+        super(StatusEffectCategory.BENEFICIAL, 15185078);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("flight.enable", false)){
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("flight.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "flight"), this);
         }
     }

@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Purity extends StatusEffect {
     public Purity() {
-        super(StatusEffectCategory.BENEFICIAL, 37035038);
+        super(StatusEffectCategory.BENEFICIAL, 0x0d0c0c);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("purity.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "purity"), this);

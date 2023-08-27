@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Well_Fed extends StatusEffect {
     public Well_Fed() {
-        super(StatusEffectCategory.BENEFICIAL, 21214719);
+        super(StatusEffectCategory.BENEFICIAL, 13005603);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("well_fed.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "well_fed"), this);

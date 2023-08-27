@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class Klutz extends StatusEffect {
     public Klutz() {
-        super(StatusEffectCategory.HARMFUL, 64102100);
+        super(StatusEffectCategory.HARMFUL, 0xff4800);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "klutz"), this);

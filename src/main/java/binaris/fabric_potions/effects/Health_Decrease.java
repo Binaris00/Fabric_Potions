@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class Health_Decrease extends StatusEffect {
     public Health_Decrease() {
-        super(StatusEffectCategory.HARMFUL, 1407453);
+        super(StatusEffectCategory.HARMFUL, 0xff5e5e);
 
         if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("health_decrease.enable", true)){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "health_decrease"), this);
