@@ -14,6 +14,12 @@
   "effect.fabric_potions.klutz":                                                 "Klutz",
   "effect.fabric_potions.klutz.description":                                     "",
 
+  "effect.fabric_potions.magic_focus":                                           "Magic focus",
+  "effect.fabric_potions.magic_focus.description":                               "",
+
+  "effect.fabric_potions.inhibition":                                            "Magic focus",
+  "effect.fabric_potions.magic_inhibition.description":                          "",
+
   "effect.fabric_potions.enderman_essence":                                      "Enderman soul",
   "effect.fabric_potions.enderman_essence.description":                          "",
 

@@ -18,8 +18,8 @@ public class Fabric_Potions implements ModInitializer {
 	public void onInitialize() {
 		Fabric_Potions_EffectConfig.registerConfigs();
 		Fabric_PotionsEffects.registerEffects();
-		Fabric_Potions_PotionsConfig.registerConfigs();
 
+		Fabric_Potions_PotionsConfig.registerConfigs();
 		Fabric_PotionsEffectsPotions.registerPotions();
 
 		LOGGER.info("Loading Fabric Potions");

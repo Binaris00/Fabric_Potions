@@ -75,6 +75,11 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Magic focus potion");
+        configs.addKeyValuePair(new Pair<>("magic_focus_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Purity potion");
         configs.addKeyValuePair(new Pair<>("purity_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_purity_potion.enable", true), "boolean");

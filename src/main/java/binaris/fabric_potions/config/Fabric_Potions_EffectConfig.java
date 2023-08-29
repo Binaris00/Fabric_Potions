@@ -71,6 +71,18 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Magic Focus effect config");
+        configs.addKeyValuePair(new Pair<>("magic_focus.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("magic_focus.damage", 2.0F), "float");
+
+        configs.emptyLine();
+
+        configs.addComment("Magic Inhibition effect config");
+        configs.addKeyValuePair(new Pair<>("magic_inhibition.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("magic_inhibition.damage", 2.0F), "float");
+
+        configs.emptyLine();
+
         configs.addComment("Purity effect config");
         configs.addKeyValuePair(new Pair<>("purity.enable", true), "boolean");
 

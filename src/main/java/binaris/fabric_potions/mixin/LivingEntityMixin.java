@@ -1,9 +1,11 @@
 package binaris.fabric_potions.mixin;
 
 import binaris.fabric_potions.Fabric_Potions;
+import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import binaris.fabric_potions.registry.Fabric_PotionsEffects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.Vec3d;
@@ -55,11 +57,26 @@ public abstract class LivingEntityMixin {
         }
     }
 
-    @Inject(at = @At("RETURN"), method = "modifyAppliedDamage", cancellable = true)
+    @Inject(at = @At("TAIL"), method = "modifyAppliedDamage", cancellable = true)
     public void moreDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir){
+        float newAmount = cir.getReturnValue();
+
         // Vulnerability
         if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.VULNERABILITY)){
-            cir.setReturnValue((float) (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(Fabric_PotionsEffects.VULNERABILITY).getAmplifier() + 1))));
+            newAmount += (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(Fabric_PotionsEffects.VULNERABILITY).getAmplifier() + 1)));
         }
+
+        // Magic focus
+        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS))){
+            newAmount += (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_focus.damage",2.0F);
+        }
+
+        // Magic inhibition
+        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION))){
+            newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);;
+        }
+
+
+        cir.setReturnValue(newAmount);
     }
 }

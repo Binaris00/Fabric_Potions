@@ -21,6 +21,7 @@ public class Fabric_PotionsEffectsPotions {
     public static Potion VULNERABILITY;
     public static Potion WELL_FED;
     public static Potion SOLID_BODY;
+    public static Potion MAGIC_FOCUS;
     public static void registerPotions(){
 
         ANTIDOTE = new Antidote_Potions();
@@ -39,5 +40,6 @@ public class Fabric_PotionsEffectsPotions {
         VULNERABILITY = new Vulnerability_Potions();
         WELL_FED = new WellFed_Potions();
         SOLID_BODY = new SolidBody_Potions();
+        MAGIC_FOCUS = new MagicFocus_Potions();
     }
 }

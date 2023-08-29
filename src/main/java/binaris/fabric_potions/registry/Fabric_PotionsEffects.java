@@ -24,6 +24,8 @@ public class Fabric_PotionsEffects {
     public static StatusEffect DIAMOND_SKIN;
     public static StatusEffect VULNERABILITY;
     public static StatusEffect CORROSION;
+    public static StatusEffect MAGIC_FOCUS;
+    public static StatusEffect MAGIC_INHIBITION;
 
     public static void registerEffects(){
         HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("health_decrease.hearths", -4.0), EntityAttributeModifier.Operation.ADDITION);
@@ -42,5 +44,7 @@ public class Fabric_PotionsEffects {
         DIAMOND_SKIN = new Diamond_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, "949E9B54-3C92-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("diamond_skin.value", 1.0), EntityAttributeModifier.Operation.ADDITION);
         VULNERABILITY = new Vulnerability();
         CORROSION = new Corrosion();
+        MAGIC_FOCUS = new MagicFocus();
+        MAGIC_INHIBITION = new MagicInhibition();
     }
 }
