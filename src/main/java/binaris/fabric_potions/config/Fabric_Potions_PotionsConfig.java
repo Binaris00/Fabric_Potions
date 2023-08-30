@@ -86,6 +86,12 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
+        configs.addKeyValuePair(new Pair<>("recoil_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_recoil_potion.enable", true), "boolean");
+
+
+        configs.emptyLine();
+
         configs.addComment("Repairing potion (Disabled by default)");
         configs.addKeyValuePair(new Pair<>("repairing_potion.enable", false), "boolean");
         configs.addKeyValuePair(new Pair<>("long_repairing_potion.enable", false), "boolean");

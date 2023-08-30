@@ -1,6 +1,5 @@
 package binaris.fabric_potions.mixin;
 
-import binaris.fabric_potions.Fabric_Potions;
 import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import binaris.fabric_potions.registry.Fabric_PotionsEffects;
 import net.minecraft.entity.LivingEntity;
@@ -33,16 +32,16 @@ public abstract class LivingEntityMixin {
         if(this.hasStatusEffect(Fabric_PotionsEffects.GRAVITATION)){
             if(livingEntity instanceof PlayerEntity player && player.isSneaking()){
                 switch(livingEntity.getStatusEffect(Fabric_PotionsEffects.GRAVITATION).getAmplifier()){
-                    case 0 -> {q += -0.06;}
-                    case 1 -> {q += -0.055;}
-                    default -> {q += -0.05;}
+                    case 0 -> q -= 0.06;
+                    case 1 -> q -= 0.055;
+                    default -> q -= 0.05;
                 }
             }
             else{
                 switch(livingEntity.getStatusEffect(Fabric_PotionsEffects.GRAVITATION).getAmplifier()){
-                    case 0 -> {q += -0.085;}
-                    case 1 -> {q += -0.089;}
-                    default -> {q += -0.091;}
+                    case 0 -> q -= 0.085;
+                    case 1 -> q -= 0.089;
+                    default -> q -= 0.091;
                 }
             }
         }
@@ -73,9 +72,15 @@ public abstract class LivingEntityMixin {
 
         // Magic inhibition
         if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION))){
-            newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);;
+            newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
         }
 
+        // Recoil
+        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.RECOIL)){
+            LivingEntity attacker = (LivingEntity) source.getAttacker();
+
+            attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(Fabric_PotionsEffects.RECOIL).getAmplifier() + 1);
+        }
 
         cir.setReturnValue(newAmount);
     }

@@ -88,6 +88,12 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Recoil effect config");
+        configs.addKeyValuePair(new Pair<>("recoil.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("recoil.value", 0.2), "float");
+
+        configs.emptyLine();
+
         configs.addComment("Repairing effect config");
         configs.addKeyValuePair(new Pair<>("repairing.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("repairing.value", 1), "int");

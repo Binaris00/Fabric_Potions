@@ -53,6 +53,8 @@
   "effect.fabric_potions.vulnerability":                                         "Vulnerability",
   "effect.fabric_potions.vulnerability.description":                             "",
 
+  "effect.fabric_potions.recoil":                                                "Recoil",
+  "effect.fabric_potions.recoil.description":                                    "",
 
   "item.minecraft.tipped_arrow.effect.antidote_potion":                          "Arrow of Antidote",
   "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "Arrow of Antidote",
@@ -223,5 +225,40 @@
   "item.minecraft.potion.effect.well_fed_potion":                                "Potion of Well fed",
   "item.minecraft.potion.effect.long_well_fed_potion":                           "Potion of Well fed",
   "item.minecraft.splash_potion.effect.well_fed_potion":                         "Splash Potion of Well fed",
-  "item.minecraft.splash_potion.effect.long_well_fed_potion":                    "Splash Potion of Well fed"
+  "item.minecraft.splash_potion.effect.long_well_fed_potion":                    "Splash Potion of Well fed",
+
+  "item.minecraft.tipped_arrow.effect.magic_inhibition_potion":                  "Arrow of Magic inhibition",
+  "item.minecraft.tipped_arrow.effect.long_magic_inhibition_potion":             "Arrow of Magic inhibition",
+  "item.minecraft.tipped_arrow.effect.strong_magic_inhibition_potion":           "Arrow of Magic inhibition",
+  "item.minecraft.lingering_potion.effect.magic_inhibition_potion":              "Lingering Potion of Magic inhibition",
+  "item.minecraft.lingering_potion.effect.long_magic_inhibition_potion":         "Lingering Potion of Magic inhibition",
+  "item.minecraft.lingering_potion.effect.strong_magic_inhibition_potion":       "Lingering Potion of Magic inhibition",
+  "item.minecraft.potion.effect.magic_inhibition_potion":                        "Potion of Magic inhibition",
+  "item.minecraft.potion.effect.long_magic_inhibition_potion":                   "Potion of Magic inhibition",
+  "item.minecraft.potion.effect.strong_magic_inhibition_potion":                 "Potion of Magic inhibition",
+  "item.minecraft.splash_potion.effect.magic_inhibition_potion":                 "Splash Potion of Magic inhibition",
+  "item.minecraft.splash_potion.effect.long_magic_inhibition_potion":            "Splash Potion of Magic inhibition",
+  "item.minecraft.splash_potion.effect.strong_magic_inhibition_potion":          "Splash Potion of Magic inhibition",
+
+  "item.minecraft.tipped_arrow.effect.magic_focus_potion":                       "Arrow of Magic focus",
+  "item.minecraft.tipped_arrow.effect.long_magic_focus_potion":                  "Arrow of Magic focus",
+  "item.minecraft.tipped_arrow.effect.strong_magic_focus_potion":                "Arrow of Magic focus",
+  "item.minecraft.lingering_potion.effect.magic_focus_potion":                   "Lingering Potion of Magic focus",
+  "item.minecraft.lingering_potion.effect.long_magic_focus_potion":              "Lingering Potion of Magic focus",
+  "item.minecraft.lingering_potion.effect.strong_magic_focus_potion":            "Lingering Potion of Magic focus",
+  "item.minecraft.potion.effect.magic_focus_potion":                             "Potion of Magic focus",
+  "item.minecraft.potion.effect.long_magic_focus_potion":                        "Potion of Magic focus",
+  "item.minecraft.potion.effect.strong_magic_focus_potion":                      "Potion of Magic focus",
+  "item.minecraft.splash_potion.effect.magic_focus_potion":                      "Splash Potion of Magic focus",
+  "item.minecraft.splash_potion.effect.long_magic_focus_potion":                 "Splash Potion of Magic focus",
+  "item.minecraft.splash_potion.effect.strong_magic_focus_potion":               "Splash Potion of Magic focus",
+
+  "item.minecraft.tipped_arrow.effect.recoil_potion":                            "Arrow of Recoil",
+  "item.minecraft.tipped_arrow.effect.long_recoil_potion":                       "Arrow of Recoil",
+  "item.minecraft.lingering_potion.effect.recoil_potion":                        "Lingering Potion of Recoil",
+  "item.minecraft.lingering_potion.effect.long_recoil_potion":                   "Lingering Potion of Recoil",
+  "item.minecraft.potion.effect.recoil_potion":                                  "Potion of Recoil",
+  "item.minecraft.potion.effect.long_recoil_potion":                             "Potion of Recoil",
+  "item.minecraft.splash_potion.effect.recoil_potion":                           "Splash Potion of Recoil",
+  "item.minecraft.splash_potion.effect.long_recoil_potion":                      "Splash Potion of Recoil"
 }
