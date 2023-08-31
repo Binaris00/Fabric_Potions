@@ -31,6 +31,12 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Burst effect config");
+        configs.addKeyValuePair(new Pair<>("burst.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("burst.explosion", 3.0F), "float");
+
+        configs.emptyLine();
+
         configs.addComment("Corrosion effect config");
         configs.addKeyValuePair(new Pair<>("corrosion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("corrosion.value", 1), "int");
@@ -46,6 +52,12 @@ public class Fabric_Potions_EffectConfig {
         configs.addComment("Enderman essence effect config");
         configs.addKeyValuePair(new Pair<>("enderman_essence.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("enderman_essence.radius", 128.0), "float");
+
+        configs.emptyLine();
+
+        configs.addComment("Explosion effect config");
+        configs.addKeyValuePair(new Pair<>("explosion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("explosion.explosion", 4.0F), "float");
 
         configs.emptyLine();
 

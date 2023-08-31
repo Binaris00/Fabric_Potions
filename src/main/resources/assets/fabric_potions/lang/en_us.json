@@ -17,7 +17,7 @@
   "effect.fabric_potions.magic_focus":                                           "Magic focus",
   "effect.fabric_potions.magic_focus.description":                               "",
 
-  "effect.fabric_potions.inhibition":                                            "Magic focus",
+  "effect.fabric_potions.magic_inhibition":                                      "Magic inhibition",
   "effect.fabric_potions.magic_inhibition.description":                          "",
 
   "effect.fabric_potions.enderman_essence":                                      "Enderman soul",
@@ -55,6 +55,12 @@
 
   "effect.fabric_potions.recoil":                                                "Recoil",
   "effect.fabric_potions.recoil.description":                                    "",
+
+  "effect.fabric_potions.burst":                                                 "Burst",
+  "effect.fabric_potions.burst.description":                                     "",
+
+  "effect.fabric_potions.explosion":                                             "Explosion",
+  "effect.fabric_potions.explosion.description":                                 "",
 
   "item.minecraft.tipped_arrow.effect.antidote_potion":                          "Arrow of Antidote",
   "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "Arrow of Antidote",
@@ -260,5 +266,15 @@
   "item.minecraft.potion.effect.recoil_potion":                                  "Potion of Recoil",
   "item.minecraft.potion.effect.long_recoil_potion":                             "Potion of Recoil",
   "item.minecraft.splash_potion.effect.recoil_potion":                           "Splash Potion of Recoil",
-  "item.minecraft.splash_potion.effect.long_recoil_potion":                      "Splash Potion of Recoil"
+  "item.minecraft.splash_potion.effect.long_recoil_potion":                      "Splash Potion of Recoil",
+
+  "item.minecraft.tipped_arrow.effect.burst_potion":                             "Arrow of Burst",
+  "item.minecraft.lingering_potion.effect.burst_potion":                         "Lingering Potion of Burst",
+  "item.minecraft.potion.effect.burst_potion":                                   "Potion of Burst",
+  "item.minecraft.splash_potion.effect.burst_potion":                            "Splash Potion of Burst",
+
+  "item.minecraft.tipped_arrow.effect.explosion_potion":                         "Arrow of Explosion",
+  "item.minecraft.lingering_potion.effect.explosion_potion":                     "Lingering Potion of Explosion",
+  "item.minecraft.potion.effect.explosion_potion":                               "Potion of Explosion",
+  "item.minecraft.splash_potion.effect.explosion_potion":                        "Splash Potion of Explosion"
 }

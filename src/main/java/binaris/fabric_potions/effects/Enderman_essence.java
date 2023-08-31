@@ -53,9 +53,4 @@ public class Enderman_essence extends StatusEffect {
     public boolean isInstant() {
         return true;
     }
-
-    @Override
-    public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        return false;
-    }
 }

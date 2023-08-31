@@ -33,6 +33,11 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Burst potion");
+        configs.addKeyValuePair(new Pair<>("burst_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Corrosion potion (Disabled by default)");
         configs.addKeyValuePair(new Pair<>("corrosion_potion.enable", false), "boolean");
         configs.addKeyValuePair(new Pair<>("long_corrosion_potion.enable", false), "boolean");
