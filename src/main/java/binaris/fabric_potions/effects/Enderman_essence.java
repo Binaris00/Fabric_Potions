@@ -50,7 +50,36 @@ public class Enderman_essence extends StatusEffect {
     }
 
     @Override
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        double d = entity.getX();
+        double e = entity.getY();
+        double f = entity.getZ();
+
+        for (int i = 0; i < 16; ++i) {
+            double g = entity.getX() + (entity.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_essence.radius", 128.0);
+            double h = MathHelper.clamp(entity.getY() + (double) (entity.getRandom().nextInt(16) - 8), entity.getWorld().getBottomY(), (entity.getWorld().getBottomY() + ((ServerWorld) entity.getWorld()).getLogicalHeight() - 1));
+            double j = entity.getZ() + (entity.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_essence.radius", 128.0);
+            if (entity.hasVehicle()) {
+                entity.stopRiding();
+            }
+
+            Vec3d vec3d = entity.getPos();
+            if (entity.teleport(g, h, j, true)) {
+                entity.getWorld().emitGameEvent(GameEvent.TELEPORT, vec3d, GameEvent.Emitter.of(entity));
+                entity.getWorld().playSound(null, d, e, f, SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                entity.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
+                break;
+            }
+        }
+    }
+
+    @Override
     public boolean isInstant() {
+        return true;
+    }
+
+    @Override
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
     }
 }

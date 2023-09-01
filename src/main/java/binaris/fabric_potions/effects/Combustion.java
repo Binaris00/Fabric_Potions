@@ -1,0 +1,28 @@
+package binaris.fabric_potions.effects;
+
+import binaris.fabric_potions.Fabric_Potions;
+import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class Combustion extends StatusEffect {
+    public Combustion() {
+        super(StatusEffectCategory.HARMFUL, 0xe34f00);
+
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("combustion.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "combustion"), this);
+        }
+    }
+
+    @Override
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {entity.setOnFireFor(1);}
+
+    @Override
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+        return true;
+    }
+}

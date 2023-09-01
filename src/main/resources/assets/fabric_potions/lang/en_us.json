@@ -62,6 +62,15 @@
   "effect.fabric_potions.explosion":                                             "Explosion",
   "effect.fabric_potions.explosion.description":                                 "",
 
+  "effect.fabric_potions.combustion":                                            "Combustion",
+  "effect.fabric_potions.combustion.description":                                "",
+
+  "effect.fabric_potions.lightning":                                             "Lightning",
+  "effect.fabric_potions.lightning.description":                                 "",
+
+  "effect.fabric_potions.launch":                                                "Launch",
+  "effect.fabric_potions.launch.description":                                    "",
+
   "item.minecraft.tipped_arrow.effect.antidote_potion":                          "Arrow of Antidote",
   "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "Arrow of Antidote",
   "item.minecraft.lingering_potion.effect.antidote_potion":                      "Lingering Potion of Antidote",
@@ -276,5 +285,24 @@
   "item.minecraft.tipped_arrow.effect.explosion_potion":                         "Arrow of Explosion",
   "item.minecraft.lingering_potion.effect.explosion_potion":                     "Lingering Potion of Explosion",
   "item.minecraft.potion.effect.explosion_potion":                               "Potion of Explosion",
-  "item.minecraft.splash_potion.effect.explosion_potion":                        "Splash Potion of Explosion"
+  "item.minecraft.splash_potion.effect.explosion_potion":                        "Splash Potion of Explosion",
+
+  "item.minecraft.tipped_arrow.effect.combustion_potion":                        "Arrow of Combustion",
+  "item.minecraft.tipped_arrow.effect.long_combustion_potion":                   "Arrow of Combustion",
+  "item.minecraft.lingering_potion.effect.combustion_potion":                    "Lingering Potion of Combustion",
+  "item.minecraft.lingering_potion.effect.long_combustion_potion":               "Lingering Potion of Combustion",
+  "item.minecraft.potion.effect.combustion_potion":                              "Potion of Combustion",
+  "item.minecraft.potion.effect.long_combustion_potion":                         "Potion of Combustion",
+  "item.minecraft.splash_potion.effect.combustion_potion":                       "Splash Potion of Combustion",
+  "item.minecraft.splash_potion.effect.long_combustion_potion":                  "Splash Potion of Combustion",
+
+  "item.minecraft.tipped_arrow.effect.lightning_potion":                         "Arrow of Lightning",
+  "item.minecraft.lingering_potion.effect.lightning_potion":                     "Lingering Potion of Lightning",
+  "item.minecraft.potion.effect.lightning_potion":                               "Potion of Lightning",
+  "item.minecraft.splash_potion.effect.lightning_potion":                        "Splash Potion of Lightning",
+
+  "item.minecraft.tipped_arrow.effect.launch_potion":                            "Arrow of Launch",
+  "item.minecraft.lingering_potion.effect.launch_potion":                        "Lingering Potion of Launch",
+  "item.minecraft.potion.effect.launch_potion":                                  "Potion of Launch",
+  "item.minecraft.splash_potion.effect.launch_potion":                           "Splash Potion of Launch"
 }

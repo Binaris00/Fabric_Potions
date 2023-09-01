@@ -26,6 +26,9 @@ public class Fabric_PotionsEffectsPotions {
     public static Potion RECOIL;
     public static Potion BURST;
     public static Potion EXPLOSION;
+    public static Potion COMBUSTION;
+    public static Potion LIGHTNING;
+    public static Potion LAUNCH;
     public static void registerPotions(){
 
         ANTIDOTE = new Antidote_Potions();
@@ -49,6 +52,8 @@ public class Fabric_PotionsEffectsPotions {
         RECOIL = new Recoil_Potions();
         BURST = new Burst_Potions();
         EXPLOSION = new Explosion_Potions();
-
+        COMBUSTION = new Combustion_Potions();
+        LIGHTNING = new Lightning_Potions();
+        LAUNCH = new Launch_Potions();
     }
 }

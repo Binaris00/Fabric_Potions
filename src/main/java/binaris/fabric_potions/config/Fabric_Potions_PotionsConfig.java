@@ -38,6 +38,12 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Combustion potion");
+        configs.addKeyValuePair(new Pair<>("combustion_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_combustion_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Corrosion potion (Disabled by default)");
         configs.addKeyValuePair(new Pair<>("corrosion_potion.enable", false), "boolean");
         configs.addKeyValuePair(new Pair<>("long_corrosion_potion.enable", false), "boolean");
@@ -77,6 +83,16 @@ public class Fabric_Potions_PotionsConfig {
         configs.addComment("Klutz potion");
         configs.addKeyValuePair(new Pair<>("klutz_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_klutz_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Launch potion");
+        configs.addKeyValuePair(new Pair<>("launch_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Lightning potion");
+        configs.addKeyValuePair(new Pair<>("lightning_potion.enable", true), "boolean");
 
         configs.emptyLine();
 

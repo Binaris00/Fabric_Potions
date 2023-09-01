@@ -29,6 +29,9 @@ public class Fabric_PotionsEffects {
     public static StatusEffect RECOIL;
     public static StatusEffect BURST;
     public static StatusEffect EXPLOSION;
+    public static StatusEffect COMBUSTION;
+    public static StatusEffect LIGHTNING;
+    public static StatusEffect LAUNCH;
     public static void registerEffects(){
         HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("health_decrease.hearths", -4.0), EntityAttributeModifier.Operation.ADDITION);
         BLEED = new Bleed();
@@ -51,5 +54,8 @@ public class Fabric_PotionsEffects {
         RECOIL = new Recoil();
         BURST = new Burst();
         EXPLOSION = new Explosion();
+        COMBUSTION = new Combustion();
+        LIGHTNING = new Lightning();
+        LAUNCH = new Launch();
     }
 }

@@ -46,6 +46,11 @@ public abstract class LivingEntityMixin {
             }
         }
 
+        // Launch
+        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.LAUNCH)){
+            q -= 0.1;
+        }
+
         return q;
     }
     @Inject(at = @At("HEAD"), method = "tickMovement")

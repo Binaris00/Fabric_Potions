@@ -37,6 +37,11 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Combustion effect config");
+        configs.addKeyValuePair(new Pair<>("combustion.enable", true), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Corrosion effect config");
         configs.addKeyValuePair(new Pair<>("corrosion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("corrosion.value", 1), "int");
@@ -80,6 +85,11 @@ public class Fabric_Potions_EffectConfig {
         configs.addComment("Klutz effect config");
         configs.addKeyValuePair(new Pair<>("klutz.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("klutz.reduce_damage", 0.45), "float");
+
+        configs.emptyLine();
+
+        configs.addComment("Lightning effect config");
+        configs.addKeyValuePair(new Pair<>("lightning.enable", true), "boolean");
 
         configs.emptyLine();
 
