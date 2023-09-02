@@ -64,6 +64,7 @@ public abstract class LivingEntityMixin {
     @Inject(at = @At("TAIL"), method = "modifyAppliedDamage", cancellable = true)
     public void moreDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir){
         float newAmount = cir.getReturnValue();
+        LivingEntity attacker = (LivingEntity) source.getAttacker();
 
         // Vulnerability
         if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.VULNERABILITY)){
@@ -82,9 +83,12 @@ public abstract class LivingEntityMixin {
 
         // Recoil
         if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.RECOIL)){
-            LivingEntity attacker = (LivingEntity) source.getAttacker();
-
             attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(Fabric_PotionsEffects.RECOIL).getAmplifier() + 1);
+        }
+
+        //Magic Shielding
+        if(attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)){
+            newAmount -= ((attacker.getStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_shielding.damage",3.0F));
         }
 
         cir.setReturnValue(newAmount);

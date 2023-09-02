@@ -29,6 +29,8 @@ public class Fabric_PotionsEffectsPotions {
     public static Potion COMBUSTION;
     public static Potion LIGHTNING;
     public static Potion LAUNCH;
+    public static Potion IRON_SKIN;
+    public static Potion MAGIC_SHIELDING;
     public static void registerPotions(){
 
         ANTIDOTE = new Antidote_Potions();
@@ -55,5 +57,7 @@ public class Fabric_PotionsEffectsPotions {
         COMBUSTION = new Combustion_Potions();
         LIGHTNING = new Lightning_Potions();
         LAUNCH = new Launch_Potions();
+        IRON_SKIN = new IronSkin_Potions();
+        MAGIC_SHIELDING = new MagicShielding_Potions();
     }
 }

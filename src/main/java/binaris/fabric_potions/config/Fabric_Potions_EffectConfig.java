@@ -82,6 +82,12 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Iron skin effect config");
+        configs.addKeyValuePair(new Pair<>("iron_skin.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("iron_skin.value", 2.0), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Klutz effect config");
         configs.addKeyValuePair(new Pair<>("klutz.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("klutz.reduce_damage", 0.45), "float");
@@ -90,6 +96,12 @@ public class Fabric_Potions_EffectConfig {
 
         configs.addComment("Lightning effect config");
         configs.addKeyValuePair(new Pair<>("lightning.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Magic Shielding effect config");
+        configs.addKeyValuePair(new Pair<>("magic_shielding.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("magic_shielding.damage", 3.0F), "float");
 
         configs.emptyLine();
 

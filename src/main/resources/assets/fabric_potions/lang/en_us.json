@@ -71,6 +71,12 @@
   "effect.fabric_potions.launch":                                                "Launch",
   "effect.fabric_potions.launch.description":                                    "",
 
+  "effect.fabric_potions.iron_skin":                                             "Iron skin",
+  "effect.fabric_potions.iron_skin.description":                                 "",
+
+  "effect.fabric_potions.magic_shielding":                                       "Magic shielding",
+  "effect.fabric_potions.magic_shielding.description":                           "",
+
   "item.minecraft.tipped_arrow.effect.antidote_potion":                          "Arrow of Antidote",
   "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "Arrow of Antidote",
   "item.minecraft.lingering_potion.effect.antidote_potion":                      "Lingering Potion of Antidote",
@@ -242,6 +248,7 @@
   "item.minecraft.splash_potion.effect.well_fed_potion":                         "Splash Potion of Well fed",
   "item.minecraft.splash_potion.effect.long_well_fed_potion":                    "Splash Potion of Well fed",
 
+
   "item.minecraft.tipped_arrow.effect.magic_inhibition_potion":                  "Arrow of Magic inhibition",
   "item.minecraft.tipped_arrow.effect.long_magic_inhibition_potion":             "Arrow of Magic inhibition",
   "item.minecraft.tipped_arrow.effect.strong_magic_inhibition_potion":           "Arrow of Magic inhibition",
@@ -254,6 +261,7 @@
   "item.minecraft.splash_potion.effect.magic_inhibition_potion":                 "Splash Potion of Magic inhibition",
   "item.minecraft.splash_potion.effect.long_magic_inhibition_potion":            "Splash Potion of Magic inhibition",
   "item.minecraft.splash_potion.effect.strong_magic_inhibition_potion":          "Splash Potion of Magic inhibition",
+
 
   "item.minecraft.tipped_arrow.effect.magic_focus_potion":                       "Arrow of Magic focus",
   "item.minecraft.tipped_arrow.effect.long_magic_focus_potion":                  "Arrow of Magic focus",
@@ -268,6 +276,7 @@
   "item.minecraft.splash_potion.effect.long_magic_focus_potion":                 "Splash Potion of Magic focus",
   "item.minecraft.splash_potion.effect.strong_magic_focus_potion":               "Splash Potion of Magic focus",
 
+
   "item.minecraft.tipped_arrow.effect.recoil_potion":                            "Arrow of Recoil",
   "item.minecraft.tipped_arrow.effect.long_recoil_potion":                       "Arrow of Recoil",
   "item.minecraft.lingering_potion.effect.recoil_potion":                        "Lingering Potion of Recoil",
@@ -277,15 +286,18 @@
   "item.minecraft.splash_potion.effect.recoil_potion":                           "Splash Potion of Recoil",
   "item.minecraft.splash_potion.effect.long_recoil_potion":                      "Splash Potion of Recoil",
 
+
   "item.minecraft.tipped_arrow.effect.burst_potion":                             "Arrow of Burst",
   "item.minecraft.lingering_potion.effect.burst_potion":                         "Lingering Potion of Burst",
   "item.minecraft.potion.effect.burst_potion":                                   "Potion of Burst",
   "item.minecraft.splash_potion.effect.burst_potion":                            "Splash Potion of Burst",
 
+
   "item.minecraft.tipped_arrow.effect.explosion_potion":                         "Arrow of Explosion",
   "item.minecraft.lingering_potion.effect.explosion_potion":                     "Lingering Potion of Explosion",
   "item.minecraft.potion.effect.explosion_potion":                               "Potion of Explosion",
   "item.minecraft.splash_potion.effect.explosion_potion":                        "Splash Potion of Explosion",
+
 
   "item.minecraft.tipped_arrow.effect.combustion_potion":                        "Arrow of Combustion",
   "item.minecraft.tipped_arrow.effect.long_combustion_potion":                   "Arrow of Combustion",
@@ -296,13 +308,35 @@
   "item.minecraft.splash_potion.effect.combustion_potion":                       "Splash Potion of Combustion",
   "item.minecraft.splash_potion.effect.long_combustion_potion":                  "Splash Potion of Combustion",
 
+
   "item.minecraft.tipped_arrow.effect.lightning_potion":                         "Arrow of Lightning",
   "item.minecraft.lingering_potion.effect.lightning_potion":                     "Lingering Potion of Lightning",
   "item.minecraft.potion.effect.lightning_potion":                               "Potion of Lightning",
   "item.minecraft.splash_potion.effect.lightning_potion":                        "Splash Potion of Lightning",
 
+
   "item.minecraft.tipped_arrow.effect.launch_potion":                            "Arrow of Launch",
   "item.minecraft.lingering_potion.effect.launch_potion":                        "Lingering Potion of Launch",
   "item.minecraft.potion.effect.launch_potion":                                  "Potion of Launch",
-  "item.minecraft.splash_potion.effect.launch_potion":                           "Splash Potion of Launch"
+  "item.minecraft.splash_potion.effect.launch_potion":                           "Splash Potion of Launch",
+
+
+  "item.minecraft.tipped_arrow.effect.iron_skin_potion":                        "Arrow of Iron skin",
+  "item.minecraft.tipped_arrow.effect.long_iron_skin_potion":                   "Arrow of Iron skin",
+  "item.minecraft.lingering_potion.effect.iron_skin_potion":                    "Lingering Potion of Iron skin",
+  "item.minecraft.lingering_potion.effect.long_iron_skin_potion":               "Lingering Potion of Iron skin",
+  "item.minecraft.potion.effect.iron_skin_potion":                              "Potion of Iron skin",
+  "item.minecraft.potion.effect.long_iron_skin_potion":                         "Potion of Iron skin",
+  "item.minecraft.splash_potion.effect.iron_skin_potion":                       "Splash Potion of Iron skin",
+  "item.minecraft.splash_potion.effect.long_iron_skin_potion":                  "Splash Potion of Iron skin",
+
+
+  "item.minecraft.tipped_arrow.effect.magic_shielding_potion":                        "Arrow of Magic shielding",
+  "item.minecraft.tipped_arrow.effect.long_magic_shielding_potion":                   "Arrow of Magic shielding",
+  "item.minecraft.lingering_potion.effect.magic_shielding_potion":                    "Lingering Potion of Magic shielding",
+  "item.minecraft.lingering_potion.effect.long_magic_shielding_potion":               "Lingering Potion of Magic shielding",
+  "item.minecraft.potion.effect.magic_shielding_potion":                              "Potion of Magic shielding",
+  "item.minecraft.potion.effect.long_magic_shielding_potion":                         "Potion of Magic shielding",
+  "item.minecraft.splash_potion.effect.magic_shielding_potion":                       "Splash Potion of Magic shielding",
+  "item.minecraft.splash_potion.effect.long_magic_shielding_potion":                  "Splash Potion of Magic shielding"
 }

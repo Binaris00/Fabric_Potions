@@ -80,6 +80,12 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Iron skin potion");
+        configs.addKeyValuePair(new Pair<>("iron_skin.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_iron_skin.enable", true), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Klutz potion");
         configs.addKeyValuePair(new Pair<>("klutz_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_klutz_potion.enable", true), "boolean");
@@ -93,6 +99,12 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.addComment("Lightning potion");
         configs.addKeyValuePair(new Pair<>("lightning_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Magic shielding potion");
+        configs.addKeyValuePair(new Pair<>("magic_shielding_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_magic_shielding_potion.enable", true), "boolean");
 
         configs.emptyLine();
 

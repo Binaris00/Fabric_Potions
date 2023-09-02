@@ -32,6 +32,8 @@ public class Fabric_PotionsEffects {
     public static StatusEffect COMBUSTION;
     public static StatusEffect LIGHTNING;
     public static StatusEffect LAUNCH;
+    public static StatusEffect IRON_SKIN;
+    public static StatusEffect MAGIC_SHIELDING;
     public static void registerEffects(){
         HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("health_decrease.hearths", -4.0), EntityAttributeModifier.Operation.ADDITION);
         BLEED = new Bleed();
@@ -57,5 +59,7 @@ public class Fabric_PotionsEffects {
         COMBUSTION = new Combustion();
         LIGHTNING = new Lightning();
         LAUNCH = new Launch();
+        IRON_SKIN = new Iron_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "0347065A-492B-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("iron_skin.value", 2.0), EntityAttributeModifier.Operation.ADDITION);
+        MAGIC_SHIELDING = new Magic_Shielding();
     }
 }
