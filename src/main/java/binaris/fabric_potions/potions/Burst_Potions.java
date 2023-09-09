@@ -20,7 +20,7 @@ public class Burst_Potions extends Potion {
     public Burst_Potions(){
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("burst_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("burst.enable", true)){
             BURST = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "burst_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.BURST, 1)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.GUNPOWDER, BURST);
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.TNT, BURST);
         }
     }
 }

@@ -19,7 +19,11 @@ public class Combustion extends StatusEffect {
     }
 
     @Override
-    public void applyUpdateEffect(LivingEntity entity, int amplifier) {entity.setOnFireFor(1);}
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        if(entity.getWorld().getTime() % 40 == 0) {
+            entity.setOnFireFor(2);
+        }
+    }
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {

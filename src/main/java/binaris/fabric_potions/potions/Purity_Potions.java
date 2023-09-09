@@ -25,7 +25,6 @@ public class Purity_Potions extends Potion {
 
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("long_purity_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("purity.enable", true)){
             LONG_PURITY = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "long_purity_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.PURITY, 9600, 0)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.LONG_FIRE_RESISTANCE, Items.CHARCOAL, LONG_PURITY);
             BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(PURITY, Items.REDSTONE, LONG_PURITY);
         }
     }

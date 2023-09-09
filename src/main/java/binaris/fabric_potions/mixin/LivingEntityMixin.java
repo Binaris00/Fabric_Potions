@@ -87,10 +87,11 @@ public abstract class LivingEntityMixin {
         }
 
         //Magic Shielding
-        if(attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)){
-            newAmount -= ((attacker.getStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_shielding.damage",3.0F));
+        if(attacker != null) {
+            if (attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)) {
+                newAmount -= ((attacker.getStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_shielding.damage", 3.0F));
+            }
         }
-
         cir.setReturnValue(newAmount);
     }
 }

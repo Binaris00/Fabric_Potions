@@ -18,7 +18,7 @@ public class Launch_Potions extends Potion {
     public Launch_Potions(){
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("launch_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("lightning.enable", true)){
             LAUNCH = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "launch_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.LAUNCH, 140, 0)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Gravitation_Potions.GRAVITATION, Items.GUNPOWDER, LAUNCH);
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Gravitation_Potions.GRAVITATION, Items.BROWN_MUSHROOM, LAUNCH);
         }
     }
 }

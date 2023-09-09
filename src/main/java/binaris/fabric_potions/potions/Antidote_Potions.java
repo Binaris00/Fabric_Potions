@@ -25,8 +25,7 @@ public class Antidote_Potions extends Potion{
 
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("long_antidote_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("antidote.enable", true)){
             LONG_ANTIDOTE = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "long_antidote_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.ANTIDOTE, 9600, 0)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.LONG_FIRE_RESISTANCE, Items.SPIDER_EYE, LONG_ANTIDOTE);
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ANTIDOTE, Items.REDSTONE_ORE, LONG_ANTIDOTE);
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ANTIDOTE, Items.REDSTONE, LONG_ANTIDOTE);
         }
     }
 }

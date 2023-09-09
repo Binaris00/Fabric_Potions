@@ -1,81 +1,81 @@
 {
   "effect.fabric_potions.health_decrease" :                                      "Health decrease",
-  "effect.fabric_potions.health_decrease.description":                           "",
+  "effect.fabric_potions.health_decrease.description":                           "Decrease your life.",
 
   "effect.fabric_potions.bleed":                                                 "Bleed",
-  "effect.fabric_potions.bleed.description":                                     "",
+  "effect.fabric_potions.bleed.description":                                     "Inflicts damage over the time.",
 
   "effect.fabric_potions.well_fed":                                              "Well fed",
-  "effect.fabric_potions.well_fed.description":                                  "",
+  "effect.fabric_potions.well_fed.description":                                  "Regenerate your hunger",
 
   "effect.fabric_potions.trueshot":                                              "True shot",
-  "effect.fabric_potions.trueshot.description":                                  "",
+  "effect.fabric_potions.trueshot.description":                                  "Increases projectile damage.",
 
   "effect.fabric_potions.klutz":                                                 "Klutz",
-  "effect.fabric_potions.klutz.description":                                     "",
+  "effect.fabric_potions.klutz.description":                                     "Decreases projectile damage.",
 
   "effect.fabric_potions.magic_focus":                                           "Magic focus",
-  "effect.fabric_potions.magic_focus.description":                               "",
+  "effect.fabric_potions.magic_focus.description":                               "Increases magic damage.",
 
   "effect.fabric_potions.magic_inhibition":                                      "Magic inhibition",
-  "effect.fabric_potions.magic_inhibition.description":                          "",
+  "effect.fabric_potions.magic_inhibition.description":                          "Decreases magic damage.",
 
   "effect.fabric_potions.enderman_essence":                                      "Enderman soul",
-  "effect.fabric_potions.enderman_essence.description":                          "",
+  "effect.fabric_potions.enderman_essence.description":                          "Teleports you to a nearby location.",
 
   "effect.fabric_potions.repairing":                                             "Repairing",
-  "effect.fabric_potions.repairing.description":                                 "",
+  "effect.fabric_potions.repairing.description":                                 "Repairs your armor and held item.",
 
   "effect.fabric_potions.solid_body":                                            "Solid body",
-  "effect.fabric_potions.solid_body.description":                                "",
+  "effect.fabric_potions.solid_body.description":                                "Gives you knockback resistance.",
 
   "effect.fabric_potions.broken_armor":                                          "Broken armor",
-  "effect.fabric_potions.broken_armor.description":                              "",
+  "effect.fabric_potions.broken_armor.description":                              "Decreases your armor.",
 
   "effect.fabric_potions.corrosion":                                             "Corrosion",
-  "effect.fabric_potions.corrosion.description":                                 "",
+  "effect.fabric_potions.corrosion.description":                                 "Damages your armor and held item.",
 
   "effect.fabric_potions.purity":                                                "Purity",
-  "effect.fabric_potions.purity.description":                                    "",
+  "effect.fabric_potions.purity.description":                                    "Prevents you from taking wither damage.",
 
   "effect.fabric_potions.antidote":                                              "Antidote",
-  "effect.fabric_potions.antidote.description":                                  "",
+  "effect.fabric_potions.antidote.description":                                  "Prevents you from taking poison damage.",
 
   "effect.fabric_potions.gravitation":                                           "Gravitation",
-  "effect.fabric_potions.gravitation.description":                               "",
+  "effect.fabric_potions.gravitation.description":                               "Control your move in the air (use shift).",
 
   "effect.fabric_potions.flight":                                                "Flight",
-  "effect.fabric_potions.flight.description":                                    "",
+  "effect.fabric_potions.flight.description":                                    "Lets you fly like in creative mode.",
 
   "effect.fabric_potions.diamond_skin":                                          "Diamond skin",
-  "effect.fabric_potions.diamond_skin.description":                              "",
+  "effect.fabric_potions.diamond_skin.description":                              "Increases your armor toughness.",
 
   "effect.fabric_potions.vulnerability":                                         "Vulnerability",
-  "effect.fabric_potions.vulnerability.description":                             "",
+  "effect.fabric_potions.vulnerability.description":                             "Increases all damage to you.",
 
   "effect.fabric_potions.recoil":                                                "Recoil",
-  "effect.fabric_potions.recoil.description":                                    "",
+  "effect.fabric_potions.recoil.description":                                    "Reflects a portion of damage back to the attacker.",
 
   "effect.fabric_potions.burst":                                                 "Burst",
-  "effect.fabric_potions.burst.description":                                     "",
+  "effect.fabric_potions.burst.description":                                     "Makes you explode but doesn't hurt you (only your enemies), and doesn't do block damage.",
 
   "effect.fabric_potions.explosion":                                             "Explosion",
-  "effect.fabric_potions.explosion.description":                                 "",
+  "effect.fabric_potions.explosion.description":                                 "Explodes you.",
 
   "effect.fabric_potions.combustion":                                            "Combustion",
-  "effect.fabric_potions.combustion.description":                                "",
+  "effect.fabric_potions.combustion.description":                                "Sets you on fire.",
 
   "effect.fabric_potions.lightning":                                             "Lightning",
-  "effect.fabric_potions.lightning.description":                                 "",
+  "effect.fabric_potions.lightning.description":                                 "Strikes you with lightning.",
 
   "effect.fabric_potions.launch":                                                "Launch",
-  "effect.fabric_potions.launch.description":                                    "",
+  "effect.fabric_potions.launch.description":                                    "Shoots you up into the air.",
 
   "effect.fabric_potions.iron_skin":                                             "Iron skin",
-  "effect.fabric_potions.iron_skin.description":                                 "",
+  "effect.fabric_potions.iron_skin.description":                                 "Increases your armor.",
 
   "effect.fabric_potions.magic_shielding":                                       "Magic shielding",
-  "effect.fabric_potions.magic_shielding.description":                           "",
+  "effect.fabric_potions.magic_shielding.description":                           "Protects you from magic damage.",
 
   "item.minecraft.tipped_arrow.effect.antidote_potion":                          "Arrow of Antidote",
   "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "Arrow of Antidote",
@@ -321,22 +321,22 @@
   "item.minecraft.splash_potion.effect.launch_potion":                           "Splash Potion of Launch",
 
 
-  "item.minecraft.tipped_arrow.effect.iron_skin_potion":                        "Arrow of Iron skin",
-  "item.minecraft.tipped_arrow.effect.long_iron_skin_potion":                   "Arrow of Iron skin",
-  "item.minecraft.lingering_potion.effect.iron_skin_potion":                    "Lingering Potion of Iron skin",
-  "item.minecraft.lingering_potion.effect.long_iron_skin_potion":               "Lingering Potion of Iron skin",
-  "item.minecraft.potion.effect.iron_skin_potion":                              "Potion of Iron skin",
-  "item.minecraft.potion.effect.long_iron_skin_potion":                         "Potion of Iron skin",
-  "item.minecraft.splash_potion.effect.iron_skin_potion":                       "Splash Potion of Iron skin",
-  "item.minecraft.splash_potion.effect.long_iron_skin_potion":                  "Splash Potion of Iron skin",
+  "item.minecraft.tipped_arrow.effect.iron_skin_potion":                         "Arrow of Iron skin",
+  "item.minecraft.tipped_arrow.effect.long_iron_skin_potion":                    "Arrow of Iron skin",
+  "item.minecraft.lingering_potion.effect.iron_skin_potion":                     "Lingering Potion of Iron skin",
+  "item.minecraft.lingering_potion.effect.long_iron_skin_potion":                "Lingering Potion of Iron skin",
+  "item.minecraft.potion.effect.iron_skin_potion":                               "Potion of Iron skin",
+  "item.minecraft.potion.effect.long_iron_skin_potion":                          "Potion of Iron skin",
+  "item.minecraft.splash_potion.effect.iron_skin_potion":                        "Splash Potion of Iron skin",
+  "item.minecraft.splash_potion.effect.long_iron_skin_potion":                   "Splash Potion of Iron skin",
 
 
-  "item.minecraft.tipped_arrow.effect.magic_shielding_potion":                        "Arrow of Magic shielding",
-  "item.minecraft.tipped_arrow.effect.long_magic_shielding_potion":                   "Arrow of Magic shielding",
-  "item.minecraft.lingering_potion.effect.magic_shielding_potion":                    "Lingering Potion of Magic shielding",
-  "item.minecraft.lingering_potion.effect.long_magic_shielding_potion":               "Lingering Potion of Magic shielding",
-  "item.minecraft.potion.effect.magic_shielding_potion":                              "Potion of Magic shielding",
-  "item.minecraft.potion.effect.long_magic_shielding_potion":                         "Potion of Magic shielding",
-  "item.minecraft.splash_potion.effect.magic_shielding_potion":                       "Splash Potion of Magic shielding",
-  "item.minecraft.splash_potion.effect.long_magic_shielding_potion":                  "Splash Potion of Magic shielding"
+  "item.minecraft.tipped_arrow.effect.magic_shielding_potion":                   "Arrow of Magic shielding",
+  "item.minecraft.tipped_arrow.effect.long_magic_shielding_potion":              "Arrow of Magic shielding",
+  "item.minecraft.lingering_potion.effect.magic_shielding_potion":               "Lingering Potion of Magic shielding",
+  "item.minecraft.lingering_potion.effect.long_magic_shielding_potion":          "Lingering Potion of Magic shielding",
+  "item.minecraft.potion.effect.magic_shielding_potion":                         "Potion of Magic shielding",
+  "item.minecraft.potion.effect.long_magic_shielding_potion":                    "Potion of Magic shielding",
+  "item.minecraft.splash_potion.effect.magic_shielding_potion":                  "Splash Potion of Magic shielding",
+  "item.minecraft.splash_potion.effect.long_magic_shielding_potion":             "Splash Potion of Magic shielding"
 }

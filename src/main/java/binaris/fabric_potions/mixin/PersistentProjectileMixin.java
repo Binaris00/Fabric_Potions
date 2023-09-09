@@ -28,9 +28,9 @@ public class PersistentProjectileMixin {
             //Klutz
             if(user.hasStatusEffect(Fabric_PotionsEffects.KLUTZ)){
                 if (user.getStatusEffect(Fabric_PotionsEffects.KLUTZ).getAmplifier() == 0) {
-                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45));
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.55));
                 } else {
-                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.45) * 2);
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.55) * 2);
                 }
             }
         }

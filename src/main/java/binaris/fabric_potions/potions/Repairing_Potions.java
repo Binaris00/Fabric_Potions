@@ -25,7 +25,7 @@ public class Repairing_Potions extends Potion {
 
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("long_repairing_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.enable", true)){
             LONG_REPAIRING = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "long_repairing_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.REPAIRING, 3600, 0)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.REDSTONE, LONG_REPAIRING);
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(REPAIRING, Items.REDSTONE, LONG_REPAIRING);
         }
     }
 }

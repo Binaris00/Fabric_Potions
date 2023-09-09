@@ -19,7 +19,7 @@ public class SolidBody_Potions extends Potion {
     public SolidBody_Potions(){
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("solid_body_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("solid_body.enable", true)){
             SOLID_BODY = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "solid_body_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.SOLID_BODY, 2400, 0)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.DIAMOND, SOLID_BODY);
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.IRON_NUGGET, SOLID_BODY);
         }
     }
 }
