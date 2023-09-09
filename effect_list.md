@@ -147,7 +147,7 @@ Gives you knockback resistance.
  
 Damages your armor and held item.
 
-## Repairing
+## Repairing (Disabled by default)
 > Awkward potion + lapiz lazuli = Repairing potion
 
 > Repairing potion + redstone = Long repairing potion
