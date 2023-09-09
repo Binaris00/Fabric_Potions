@@ -1,3 +1,12 @@
+## Health decrease
+Decrease your life.
+
+## Bleed
+Inflicts damage over the time.
+
+## Well fed
+Regenerate your hunger
+
 ## True shot
 Increases projectile damage (like how strength increases melee damage).
 
@@ -17,7 +26,7 @@ Reflects a portion of damage back to the attacker.
 Makes you explode but doesn't hurt you (only your enemies), and doesn't do block damage.
 
 ## Explosion
-### Explodes you.
+Explodes you.
 
 ## Combustion
 Sets you on fire.
@@ -38,16 +47,16 @@ Decreases your armor.
 Increases your armor.
 
 ## Diamond skin
-Increases your armor toughness
+Increases your armor toughness.
 
 ## Magic shielding
 Protects you from magic damage (which is normally unblockable)
 
-## Solid core
+## Solid body
 Gives you knockback resistance.
 
 ## Corrosion
-Damages your armor and held item
+Damages your armor and held item.
 
 ## Repairing
 Repairs your armor and held item.
@@ -59,5 +68,8 @@ Lets you fly like in creative mode.
 Prevents you from taking poison damage.
 
 ## Purity
+*antidote* 
 Prevents you from taking wither damage.
 
+## Enderman soul
+Teleports you to a nearby location.
