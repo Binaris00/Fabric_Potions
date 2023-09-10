@@ -12,8 +12,20 @@ I also recommend to use this mod with [Stylish Effects (for a better visual expe
 A
 
 ## Installation
-A
+You only need to install [Fabric api](https://www.curseforge.com/minecraft/mc-mods/fabric-api) to use this mod :>
+
+Only put the mod in your mod folder with the fabric api
+
 
 ## F.A.Q
-Q: 
-A:
+**Q:** *When a upgrade/downgrade?* 
+
+**A:** *I want to update this mod for any new minecraft version, for any downgrade maybe if a lot of people want a downgrade.*
+
+**Q:** *What I can do if a have a error/crash?*
+
+**A:** *Open a issue in the mod repo and send the log and a little description about the error.*
+
+**Q:** *How can I disable X effect/potion?*
+
+**A:** *See the .minecraft/config and search the fabric potion config (you need to run the mod first)*
