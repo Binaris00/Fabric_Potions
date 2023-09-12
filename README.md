@@ -8,9 +8,6 @@ This mod have 26 effects/potions, so if you want to see al the descriptions and 
 
 I also recommend to use this mod with [Stylish Effects (for a better visual experience with the effects)](https://www.curseforge.com/minecraft/mc-mods/stylish-effects) [JEED](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed) and [Effect descriptions](https://www.curseforge.com/minecraft/mc-mods/new-effect-descriptions)
 
-## Support
-A
-
 ## Installation
 You only need to install [Fabric api](https://www.curseforge.com/minecraft/mc-mods/fabric-api) to use this mod :>
 
