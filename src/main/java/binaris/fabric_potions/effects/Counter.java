@@ -8,12 +8,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Launch extends StatusEffect {
-    public Launch() {
-        super(StatusEffectCategory.NEUTRAL, 0xf8ffb0);
-
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("launch.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "launch"), this);
+public class Counter extends StatusEffect {
+    public Counter() {
+        super(StatusEffectCategory.BENEFICIAL, 0xff8ae2);
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("counter.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "counter"), this);
         }
     }
 }

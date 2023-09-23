@@ -8,12 +8,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Klutz extends StatusEffect {
-    public Klutz() {
+public class BadShot extends StatusEffect {
+    public BadShot() {
         super(StatusEffectCategory.HARMFUL, 0xff4800);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "klutz"), this);
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("badshot.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "badshot"), this);
         }
     }
 

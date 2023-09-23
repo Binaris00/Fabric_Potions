@@ -45,12 +45,6 @@ public abstract class LivingEntityMixin {
                 }
             }
         }
-
-        // Launch
-        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.LAUNCH)){
-            q -= 0.1;
-        }
-
         return q;
     }
     @Inject(at = @At("HEAD"), method = "tickMovement")
@@ -81,9 +75,9 @@ public abstract class LivingEntityMixin {
             newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
         }
 
-        // Recoil
-        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.RECOIL)){
-            attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(Fabric_PotionsEffects.RECOIL).getAmplifier() + 1);
+        // Counter
+        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.COUNTER)){
+            attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(Fabric_PotionsEffects.COUNTER).getAmplifier() + 1);
         }
 
         //Magic Shielding

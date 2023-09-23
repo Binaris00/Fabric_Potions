@@ -21,16 +21,16 @@ public class PersistentProjectileMixin {
         if(persistentProjectileEntity.getOwner() instanceof LivingEntity user && persistentProjectileEntity instanceof ArrowEntity){
 
             //True Shot
-            if(user.hasStatusEffect(Fabric_PotionsEffects.TRUESHOT)) {
-                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + user.getStatusEffect(Fabric_PotionsEffects.TRUESHOT).getAmplifier() + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("trueshot.base_damage", 1.3));
+            if(user.hasStatusEffect(Fabric_PotionsEffects.PERFECTSHOT)) {
+                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + user.getStatusEffect(Fabric_PotionsEffects.PERFECTSHOT).getAmplifier() + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("perfectshot.base_damage", 1.3));
             }
 
-            //Klutz
-            if(user.hasStatusEffect(Fabric_PotionsEffects.KLUTZ)){
-                if (user.getStatusEffect(Fabric_PotionsEffects.KLUTZ).getAmplifier() == 0) {
-                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.55));
+            //BadShot
+            if(user.hasStatusEffect(Fabric_PotionsEffects.BADSHOT)){
+                if (user.getStatusEffect(Fabric_PotionsEffects.BADSHOT).getAmplifier() == 0) {
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("badshot.reduce_damage", 0.55));
                 } else {
-                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("klutz.reduce_damage", 0.55) * 2);
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("badshot.reduce_damage", 0.55) * 2);
                 }
             }
         }

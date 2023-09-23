@@ -20,6 +20,12 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
+        configs.addComment("BadShot potion");
+        configs.addKeyValuePair(new Pair<>("badshot_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_badshot_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
         configs.addComment("Bleed potion");
         configs.addKeyValuePair(new Pair<>("bleed_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_bleed_potion.enable", true), "boolean");
@@ -33,20 +39,15 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
-        configs.addComment("Burst potion");
-        configs.addKeyValuePair(new Pair<>("burst_potion.enable", true), "boolean");
-
-        configs.emptyLine();
-
-        configs.addComment("Combustion potion");
-        configs.addKeyValuePair(new Pair<>("combustion_potion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("long_combustion_potion.enable", true), "boolean");
-
-        configs.emptyLine();
-
         configs.addComment("Corrosion potion (Disabled by default)");
         configs.addKeyValuePair(new Pair<>("corrosion_potion.enable", false), "boolean");
         configs.addKeyValuePair(new Pair<>("long_corrosion_potion.enable", false), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Counter potion");
+        configs.addKeyValuePair(new Pair<>("counter_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_counter_potion.enable", true), "boolean");
 
         configs.emptyLine();
 
@@ -56,8 +57,8 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
-        configs.addComment("Enderman essence potion");
-        configs.addKeyValuePair(new Pair<>("enderman_essence_potion.enable", true), "boolean");
+        configs.addComment("Enderman soul potion");
+        configs.addKeyValuePair(new Pair<>("enderman_soul_potion.enable", true), "boolean");
 
         configs.emptyLine();
 
@@ -86,19 +87,22 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
-        configs.addComment("Klutz potion");
-        configs.addKeyValuePair(new Pair<>("klutz_potion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("long_klutz_potion.enable", true), "boolean");
-
-        configs.emptyLine();
-
-        configs.addComment("Launch potion");
-        configs.addKeyValuePair(new Pair<>("launch_potion.enable", true), "boolean");
-
-        configs.emptyLine();
-
         configs.addComment("Lightning potion");
         configs.addKeyValuePair(new Pair<>("lightning_potion.enable", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Magic focus potion");
+        configs.addKeyValuePair(new Pair<>("magic_focus_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_magic_focus_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("strong_magic_focus_potion", true), "boolean");
+
+        configs.emptyLine();
+
+        configs.addComment("Magic inhibition potion");
+        configs.addKeyValuePair(new Pair<>("magic_inhibition_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_magic_inhibition_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("strong_magic_inhibition_potion.enable", true), "boolean");
 
         configs.emptyLine();
 
@@ -108,20 +112,16 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.emptyLine();
 
-        configs.addComment("Magic focus potion");
-        configs.addKeyValuePair(new Pair<>("magic_focus_potion.enable", true), "boolean");
+        configs.addComment("PerfectShot potion");
+        configs.addKeyValuePair(new Pair<>("perfectshot_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_perfectshot_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("strong_perfectshot.enable", true), "boolean");
 
         configs.emptyLine();
 
         configs.addComment("Purity potion");
         configs.addKeyValuePair(new Pair<>("purity_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_purity_potion.enable", true), "boolean");
-
-        configs.emptyLine();
-
-        configs.addKeyValuePair(new Pair<>("recoil_potion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("long_recoil_potion.enable", true), "boolean");
-
 
         configs.emptyLine();
 
@@ -133,13 +133,6 @@ public class Fabric_Potions_PotionsConfig {
 
         configs.addComment("Solid body potion");
         configs.addKeyValuePair(new Pair<>("solid_body.enable", true), "boolean");
-
-        configs.emptyLine();
-
-        configs.addComment("Trueshot potion");
-        configs.addKeyValuePair(new Pair<>("trueshot_potion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("long_trueshot_potion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("strong_trueshot.enable", true), "boolean");
 
         configs.emptyLine();
 

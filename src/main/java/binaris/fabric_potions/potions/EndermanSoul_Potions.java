@@ -13,14 +13,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Burst_Potions extends Potion {
-
-    public static Potion BURST;
-
-    public Burst_Potions(){
-        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("burst_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("burst.enable", true)){
-            BURST = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "burst_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.BURST, 1)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.TNT, BURST);
+public class EndermanSoul_Potions extends Potion {
+    public static Potion ENDERMAN_SOUL;
+    public EndermanSoul_Potions(){
+        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("enderman_soul_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_soul.enable", true)){
+            ENDERMAN_SOUL = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "enderman_soul_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.ENDERMAN_SOUL, 1)));
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.ENDER_PEARL, ENDERMAN_SOUL);
         }
     }
 }

@@ -8,12 +8,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class TrueShot extends StatusEffect {
-    public TrueShot() {
+public class PerfectShot extends StatusEffect {
+    public PerfectShot() {
         super(StatusEffectCategory.BENEFICIAL, 975823);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("trueshot.enable", true)){
-            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "trueshot"), this);
+        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("perfectshot.enable", true)){
+            Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "perfectshot"), this);
         }
     }
 

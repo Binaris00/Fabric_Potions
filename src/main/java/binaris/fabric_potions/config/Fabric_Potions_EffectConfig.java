@@ -18,6 +18,12 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("BadShot effect config");
+        configs.addKeyValuePair(new Pair<>("badshot.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("badshot.reduce_damage", 0.55), "float");
+
+        configs.emptyLine();
+
         configs.addComment("Bleed effect config");
         configs.addKeyValuePair(new Pair<>("bleed.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("bleed.time", 40), "tick");
@@ -28,12 +34,6 @@ public class Fabric_Potions_EffectConfig {
         configs.addComment("Broken armor effect config");
         configs.addKeyValuePair(new Pair<>("broken_armor.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("broken_armor.value", -2.0), "float");
-
-        configs.emptyLine();
-
-        configs.addComment("Burst effect config");
-        configs.addKeyValuePair(new Pair<>("burst.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("burst.explosion", 3.0F), "float");
 
         configs.emptyLine();
 
@@ -48,21 +48,21 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
+        configs.addComment("Counter effect config");
+        configs.addKeyValuePair(new Pair<>("counter.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("counter.value", 0.2), "float");
+
+        configs.emptyLine();
+
         configs.addComment("Diamond Skin effect config");
         configs.addKeyValuePair(new Pair<>("diamond_skin.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("diamond_skin.value", 1.0), "float");
 
         configs.emptyLine();
 
-        configs.addComment("Enderman essence effect config");
-        configs.addKeyValuePair(new Pair<>("enderman_essence.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("enderman_essence.radius", 128.0), "float");
-
-        configs.emptyLine();
-
-        configs.addComment("Explosion effect config");
-        configs.addKeyValuePair(new Pair<>("explosion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("explosion.explosion", 4.0F), "float");
+        configs.addComment("Enderman soul effect config");
+        configs.addKeyValuePair(new Pair<>("enderman_soul.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("enderman_soul.radius", 128.0), "float");
 
         configs.emptyLine();
 
@@ -85,12 +85,6 @@ public class Fabric_Potions_EffectConfig {
         configs.addComment("Iron skin effect config");
         configs.addKeyValuePair(new Pair<>("iron_skin.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("iron_skin.value", 2.0), "boolean");
-
-        configs.emptyLine();
-
-        configs.addComment("Klutz effect config");
-        configs.addKeyValuePair(new Pair<>("klutz.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("klutz.reduce_damage", 0.55), "float");
 
         configs.emptyLine();
 
@@ -117,14 +111,14 @@ public class Fabric_Potions_EffectConfig {
 
         configs.emptyLine();
 
-        configs.addComment("Purity effect config");
-        configs.addKeyValuePair(new Pair<>("purity.enable", true), "boolean");
+        configs.addComment("PerfectShot effect config");
+        configs.addKeyValuePair(new Pair<>("perfectshot.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("perfectshot.base_damage", 1.3), "float");
 
         configs.emptyLine();
 
-        configs.addComment("Recoil effect config");
-        configs.addKeyValuePair(new Pair<>("recoil.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("recoil.value", 0.2), "float");
+        configs.addComment("Purity effect config");
+        configs.addKeyValuePair(new Pair<>("purity.enable", true), "boolean");
 
         configs.emptyLine();
 
@@ -137,11 +131,6 @@ public class Fabric_Potions_EffectConfig {
         configs.addComment("Solid Body effect config");
         configs.addKeyValuePair(new Pair<>("solid_body.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("solid_body.value", 1.0), "float");
-
-
-        configs.addComment("True Shot effect config");
-        configs.addKeyValuePair(new Pair<>("trueshot.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("trueshot.base_damage", 1.3), "float");
 
         configs.emptyLine();
 

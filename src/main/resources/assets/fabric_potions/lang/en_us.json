@@ -8,11 +8,11 @@
   "effect.fabric_potions.well_fed":                                              "Well fed",
   "effect.fabric_potions.well_fed.description":                                  "Regenerate your hunger",
 
-  "effect.fabric_potions.trueshot":                                              "True shot",
-  "effect.fabric_potions.trueshot.description":                                  "Increases projectile damage.",
+  "effect.fabric_potions.perfectshot":                                           "Perfect shot",
+  "effect.fabric_potions.perfectshot.description":                               "Increases projectile damage.",
 
-  "effect.fabric_potions.klutz":                                                 "Klutz",
-  "effect.fabric_potions.klutz.description":                                     "Decreases projectile damage.",
+  "effect.fabric_potions.badshot":                                               "Bad shot",
+  "effect.fabric_potions.badshot.description":                                   "Decreases projectile damage.",
 
   "effect.fabric_potions.magic_focus":                                           "Magic focus",
   "effect.fabric_potions.magic_focus.description":                               "Increases magic damage.",
@@ -53,23 +53,14 @@
   "effect.fabric_potions.vulnerability":                                         "Vulnerability",
   "effect.fabric_potions.vulnerability.description":                             "Increases all damage to you.",
 
-  "effect.fabric_potions.recoil":                                                "Recoil",
-  "effect.fabric_potions.recoil.description":                                    "Reflects a portion of damage back to the attacker.",
-
-  "effect.fabric_potions.burst":                                                 "Burst",
-  "effect.fabric_potions.burst.description":                                     "Makes you explode but doesn't hurt you (only your enemies), and doesn't do block damage.",
-
-  "effect.fabric_potions.explosion":                                             "Explosion",
-  "effect.fabric_potions.explosion.description":                                 "Explodes you.",
+  "effect.fabric_potions.counter":                                               "Counter",
+  "effect.fabric_potions.counter.description":                                   "It Reflects a part of the damage back to the attacker.",
 
   "effect.fabric_potions.combustion":                                            "Combustion",
   "effect.fabric_potions.combustion.description":                                "Sets you on fire.",
 
   "effect.fabric_potions.lightning":                                             "Lightning",
   "effect.fabric_potions.lightning.description":                                 "Strikes you with lightning.",
-
-  "effect.fabric_potions.launch":                                                "Launch",
-  "effect.fabric_potions.launch.description":                                    "Shoots you up into the air.",
 
   "effect.fabric_potions.iron_skin":                                             "Iron skin",
   "effect.fabric_potions.iron_skin.description":                                 "Increases your armor.",
@@ -131,10 +122,10 @@
   "item.minecraft.splash_potion.effect.long_diamond_skin_potion":                "Splash Potion of Diamond skin",
 
 
-  "item.minecraft.tipped_arrow.effect.enderman_essence_potion":                  "Arrow of Enderman soul",
-  "item.minecraft.lingering_potion.effect.enderman_essence_potion":              "Lingering Potion of Enderman soul",
-  "item.minecraft.potion.effect.enderman_essence_potion":                        "Potion of Enderman soul",
-  "item.minecraft.splash_potion.effect.enderman_essence_potion":                 "Splash Potion of Enderman soul",
+  "item.minecraft.tipped_arrow.effect.enderman_soul_potion":                     "Arrow of Enderman soul",
+  "item.minecraft.lingering_potion.effect.enderman_soul_potion":                 "Lingering Potion of Enderman soul",
+  "item.minecraft.potion.effect.enderman_soul_potion":                           "Potion of Enderman soul",
+  "item.minecraft.splash_potion.effect.enderman_soul_potion":                    "Splash Potion of Enderman soul",
 
 
   "item.minecraft.tipped_arrow.effect.flight_potion":                            "Arrow of Flight",
@@ -175,14 +166,14 @@
   "item.minecraft.splash_potion.effect.strong_health_decrease_potion":           "Splash Potion of Health decrease",
 
 
-  "item.minecraft.tipped_arrow.effect.klutz_potion":                             "Arrow of Klutz",
-  "item.minecraft.tipped_arrow.effect.long_klutz_potion":                        "Arrow of Klutz",
-  "item.minecraft.lingering_potion.effect.klutz_potion":                         "Lingering Potion of Klutz",
-  "item.minecraft.lingering_potion.effect.long_klutz_potion":                    "Lingering Potion of Klutz",
-  "item.minecraft.potion.effect.klutz_potion":                                   "Potion of Klutz",
-  "item.minecraft.potion.effect.long_klutz_potion":                              "Potion of Klutz",
-  "item.minecraft.splash_potion.effect.klutz_potion":                            "Splash Potion of Klutz",
-  "item.minecraft.splash_potion.effect.long_klutz_potion":                       "Splash Potion of Klutz",
+  "item.minecraft.tipped_arrow.effect.badshot_potion":                           "Arrow of Bad shot",
+  "item.minecraft.tipped_arrow.effect.long_badshot_potion":                      "Arrow of Bad shot",
+  "item.minecraft.lingering_potion.effect.badshot_potion":                       "Lingering Potion of Bad shot",
+  "item.minecraft.lingering_potion.effect.long_badshot_potion":                  "Lingering Potion of Bad shot",
+  "item.minecraft.potion.effect.badshot_potion":                                 "Potion of Bad shot",
+  "item.minecraft.potion.effect.long_badshot_potion":                            "Potion of Bad shot",
+  "item.minecraft.splash_potion.effect.badshot_potion":                          "Splash Potion of Bad shot",
+  "item.minecraft.splash_potion.effect.long_badshot_potion":                     "Splash Potion of Bad shot",
 
 
   "item.minecraft.tipped_arrow.effect.purity_potion":                            "Arrow of Purity",
@@ -211,18 +202,18 @@
   "item.minecraft.splash_potion.effect.solid_body_potion":                       "Splash Potion of Solid body",
 
 
-  "item.minecraft.tipped_arrow.effect.trueshot_potion":                          "Arrow of Trueshot",
-  "item.minecraft.tipped_arrow.effect.long_trueshot_potion":                     "Arrow of Trueshot",
-  "item.minecraft.tipped_arrow.effect.strong_trueshot_potion":                   "Arrow of Trueshot",
-  "item.minecraft.lingering_potion.effect.trueshot_potion":                      "Lingering Potion of Trueshot",
-  "item.minecraft.lingering_potion.effect.long_trueshot_potion":                 "Lingering Potion of Trueshot",
-  "item.minecraft.lingering_potion.effect.strong_trueshot_potion":               "Lingering Potion of Trueshot",
-  "item.minecraft.potion.effect.trueshot_potion":                                "Potion of Trueshot",
-  "item.minecraft.potion.effect.long_trueshot_potion":                           "Potion of Trueshot",
-  "item.minecraft.potion.effect.strong_trueshot_potion":                         "Potion of Trueshot",
-  "item.minecraft.splash_potion.effect.trueshot_potion":                         "Splash Potion of Trueshot",
-  "item.minecraft.splash_potion.effect.long_trueshot_potion":                    "Splash Potion of Trueshot",
-  "item.minecraft.splash_potion.effect.strong_trueshot_potion":                  "Splash Potion of Trueshot",
+  "item.minecraft.tipped_arrow.effect.perfectshot_potion":                       "Arrow of Perfect shot",
+  "item.minecraft.tipped_arrow.effect.long_perfectshot_potion":                  "Arrow of Perfect shot",
+  "item.minecraft.tipped_arrow.effect.strong_perfectshot_potion":                "Arrow of Perfect shot",
+  "item.minecraft.lingering_potion.effect.perfectshot_potion":                   "Lingering Potion of Perfect shot",
+  "item.minecraft.lingering_potion.effect.long_perfectshot_potion":              "Lingering Potion of Perfect shot",
+  "item.minecraft.lingering_potion.effect.strong_perfectshot_potion":            "Lingering Potion of Perfect shot",
+  "item.minecraft.potion.effect.perfectshot_potion":                             "Potion of Perfect shot",
+  "item.minecraft.potion.effect.long_perfectshot_potion":                        "Potion of Perfect shot",
+  "item.minecraft.potion.effect.strong_perfectshot_potion":                      "Potion of Perfect shot",
+  "item.minecraft.splash_potion.effect.perfectshot_potion":                      "Splash Potion of Perfect shot",
+  "item.minecraft.splash_potion.effect.long_perfectshot_potion":                 "Splash Potion of Perfect shot",
+  "item.minecraft.splash_potion.effect.strong_perfectshot_potion":               "Splash Potion of Perfect shot",
 
 
   "item.minecraft.tipped_arrow.effect.vulnerability_potion":                     "Arrow of Vulnerability",
@@ -277,26 +268,14 @@
   "item.minecraft.splash_potion.effect.strong_magic_focus_potion":               "Splash Potion of Magic focus",
 
 
-  "item.minecraft.tipped_arrow.effect.recoil_potion":                            "Arrow of Recoil",
-  "item.minecraft.tipped_arrow.effect.long_recoil_potion":                       "Arrow of Recoil",
-  "item.minecraft.lingering_potion.effect.recoil_potion":                        "Lingering Potion of Recoil",
-  "item.minecraft.lingering_potion.effect.long_recoil_potion":                   "Lingering Potion of Recoil",
-  "item.minecraft.potion.effect.recoil_potion":                                  "Potion of Recoil",
-  "item.minecraft.potion.effect.long_recoil_potion":                             "Potion of Recoil",
-  "item.minecraft.splash_potion.effect.recoil_potion":                           "Splash Potion of Recoil",
-  "item.minecraft.splash_potion.effect.long_recoil_potion":                      "Splash Potion of Recoil",
-
-
-  "item.minecraft.tipped_arrow.effect.burst_potion":                             "Arrow of Burst",
-  "item.minecraft.lingering_potion.effect.burst_potion":                         "Lingering Potion of Burst",
-  "item.minecraft.potion.effect.burst_potion":                                   "Potion of Burst",
-  "item.minecraft.splash_potion.effect.burst_potion":                            "Splash Potion of Burst",
-
-
-  "item.minecraft.tipped_arrow.effect.explosion_potion":                         "Arrow of Explosion",
-  "item.minecraft.lingering_potion.effect.explosion_potion":                     "Lingering Potion of Explosion",
-  "item.minecraft.potion.effect.explosion_potion":                               "Potion of Explosion",
-  "item.minecraft.splash_potion.effect.explosion_potion":                        "Splash Potion of Explosion",
+  "item.minecraft.tipped_arrow.effect.counter_potion":                           "Arrow of Counter",
+  "item.minecraft.tipped_arrow.effect.long_counter_potion":                      "Arrow of Counter",
+  "item.minecraft.lingering_potion.effect.counter_potion":                       "Lingering Potion of Counter",
+  "item.minecraft.lingering_potion.effect.long_counter_potion":                  "Lingering Potion of Counter",
+  "item.minecraft.potion.effect.counter_potion":                                 "Potion of Counter",
+  "item.minecraft.potion.effect.long_counter_potion":                            "Potion of Counter",
+  "item.minecraft.splash_potion.effect.counter_potion":                          "Splash Potion of Counter",
+  "item.minecraft.splash_potion.effect.long_counter_potion":                     "Splash Potion of Counter",
 
 
   "item.minecraft.tipped_arrow.effect.combustion_potion":                        "Arrow of Combustion",
@@ -313,12 +292,6 @@
   "item.minecraft.lingering_potion.effect.lightning_potion":                     "Lingering Potion of Lightning",
   "item.minecraft.potion.effect.lightning_potion":                               "Potion of Lightning",
   "item.minecraft.splash_potion.effect.lightning_potion":                        "Splash Potion of Lightning",
-
-
-  "item.minecraft.tipped_arrow.effect.launch_potion":                            "Arrow of Launch",
-  "item.minecraft.lingering_potion.effect.launch_potion":                        "Lingering Potion of Launch",
-  "item.minecraft.potion.effect.launch_potion":                                  "Potion of Launch",
-  "item.minecraft.splash_potion.effect.launch_potion":                           "Splash Potion of Launch",
 
 
   "item.minecraft.tipped_arrow.effect.iron_skin_potion":                         "Arrow of Iron skin",

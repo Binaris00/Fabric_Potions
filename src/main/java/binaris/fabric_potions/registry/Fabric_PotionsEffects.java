@@ -11,9 +11,9 @@ public class Fabric_PotionsEffects {
     public static StatusEffect HEALTH_DECREASE;
     public static StatusEffect BLEED;
     public static StatusEffect WELL_FED;
-    public static StatusEffect TRUESHOT;
-    public static StatusEffect KLUTZ;
-    public static StatusEffect ENDERMAN_ESSENCE;
+    public static StatusEffect PERFECTSHOT;
+    public static StatusEffect BADSHOT;
+    public static StatusEffect ENDERMAN_SOUL;
     public static StatusEffect REPAIRING;
     public static StatusEffect BROKEN_ARMOR;
     public static StatusEffect SOLID_BODY;
@@ -26,21 +26,18 @@ public class Fabric_PotionsEffects {
     public static StatusEffect CORROSION;
     public static StatusEffect MAGIC_FOCUS;
     public static StatusEffect MAGIC_INHIBITION;
-    public static StatusEffect RECOIL;
-    public static StatusEffect BURST;
-    public static StatusEffect EXPLOSION;
+    public static StatusEffect COUNTER;
     public static StatusEffect COMBUSTION;
     public static StatusEffect LIGHTNING;
-    public static StatusEffect LAUNCH;
     public static StatusEffect IRON_SKIN;
     public static StatusEffect MAGIC_SHIELDING;
     public static void registerEffects(){
         HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("health_decrease.hearths", -4.0), EntityAttributeModifier.Operation.ADDITION);
         BLEED = new Bleed();
         WELL_FED = new Well_Fed();
-        TRUESHOT = new TrueShot();
-        KLUTZ = new Klutz();
-        ENDERMAN_ESSENCE = new Enderman_essence();
+        PERFECTSHOT = new PerfectShot();
+        BADSHOT = new BadShot();
+        ENDERMAN_SOUL = new Enderman_soul();
         REPAIRING = new Repairing();
         BROKEN_ARMOR = new Broken_Armor().addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "5fA8F46A-388E-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("broken_armor.value", -2.0), EntityAttributeModifier.Operation.ADDITION);
         SOLID_BODY = new Solid_Body().addAttributeModifier(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, "4AD16B22-3892-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("solid_body.value", 1.0), EntityAttributeModifier.Operation.ADDITION);
@@ -53,12 +50,9 @@ public class Fabric_PotionsEffects {
         CORROSION = new Corrosion();
         MAGIC_FOCUS = new MagicFocus();
         MAGIC_INHIBITION = new MagicInhibition();
-        RECOIL = new Recoil();
-        BURST = new Burst();
-        EXPLOSION = new Explosion();
+        COUNTER = new Counter();
         COMBUSTION = new Combustion();
         LIGHTNING = new Lightning();
-        LAUNCH = new Launch();
         IRON_SKIN = new Iron_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "0347065A-492B-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("iron_skin.value", 2.0), EntityAttributeModifier.Operation.ADDITION);
         MAGIC_SHIELDING = new Magic_Shielding();
     }

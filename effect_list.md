@@ -30,21 +30,12 @@ Inflicts damage over the time.
  
 Regenerate your hunger
 
-## True shot
-> Awkward potion + fire charge = True shot potion
+## Bad shot
+> True shot potion + fermented spider eye = Bad shot potion
 
-> True shot potion + redstone = Long true shot potion
-
-> True shot potion + glowstone dust = Strong true shot potion
-  
-Increases projectile damage (like how strength increases melee damage).
-
-## Klutz
-> True shot potion + fermented spider eye = Klutz potion
-
-> Klutz potion + redstone = Long klutz potion
+> Bad shot potion + redstone = Long bad shot potion
  
-Decreases projectile damage (like how weakness decreases melee damage).
+Decreases projectile damage.
 
 ## Magic focus
 > Awkward potion + glowstone dust = magic focus potion
@@ -53,7 +44,7 @@ Decreases projectile damage (like how weakness decreases melee damage).
 
 > Magic focus potion + glowstone dust = strong magic focus potion
 
-Increases magic damage (like how strength increases melee damage).
+Increases magic damage.
 
 ## Magic inhibition
 > Magic focus potion + fermented spider eye = Magic inhibition potion
@@ -62,24 +53,23 @@ Increases magic damage (like how strength increases melee damage).
 
 > Magic inhibition potion + glowstone dust = strong magic inhibition potion
 
-Decreases magic damage (like how weakness decreases melee damage).
+Decreases magic damage.
 
-## Recoil
-> Awkward potion + charcoal = Recoil potion
+## Perfect Shot
+> Awkward potion + fire charge = Perfect shot potion
 
-> Recoil potion + redstone = Long recoil potion
+> Perfect shot potion + redstone = Long perfect shot potion
 
-Reflects a portion of damage back to the attacker.
+> Perfect shot potion + glowstone dust = Strong perfect shot potion
 
-## Burst
-> Awkward potion + TNT = Burst potion
- 
-Makes you explode but doesn't hurt you (only your enemies), and doesn't do block damage.
+Increases projectile damage.
 
-## Explosion
-> Burst potion + fermented spider eye = Explosion potion
+## Counter
+> Awkward potion + charcoal = Counter potion
 
-Explodes you.
+> Recoil potion + redstone = Long counter potion
+
+It Reflects a part of the damage back to the attacker.
 
 ## Combustion
 > Fire resistance potion + fermented spider eye = Combustion potion
@@ -89,14 +79,9 @@ Explodes you.
 Sets you on fire.
 
 ## Lightning
-> Burst potion + blaze powder = lightning potion
+> Combustion potion + blaze powder = lightning potion
 
 Strikes you with lightning.
-
-## Launch
-> Gravitation potion + brown mushroom = Launch potion
-
-Shoots you up into the air.
 
 ## Vulnerability
 > Instant damage potion + fermented spider eye = Vulnerability potion
@@ -105,9 +90,9 @@ Shoots you up into the air.
 
 > Vulnerability potion + glowstone dust = Strong vulnerability potion
  
-Increases all damage to you (like how resistance decreases all damage to you).
+Increases all damage to you.
 
-## Broken armmor
+## Broken armor
 > Awkward potion + iron ingot = broken armor potion
 
 > Broken armor potion + redstone = long broken armor potion
@@ -133,12 +118,12 @@ Increases your armor toughness.
 
 > magic shielding potion + redstone = long magic shielding potion
  
-Protects you from magic damage (which is normally unblockable)
+Protects you from magic damage.
 
 ## Solid body
 > Awkward potion + iron nugget = Solid body potion
 
-Gives you knockback resistance.
+Gives you more knockback resistance.
 
 ## Corrosion (Disabled by default)
 >  Repairing potion + fermented spider eye = Corrosion potion
@@ -159,23 +144,23 @@ Repairs your armor and held item.
 
 > Flight potion + redstone = long flight potion
  
-Lets you fly like in creative mode.
+Make you fly like in creative mode.
 
 ## Antidote
 > Fire aspect potion + spider eye = antidote potion
 
 > Antidote potion + redstone = long antidote potion
 
-Prevents you from taking poison damage.
+Remove the poison effect.
 
 ## Purity
 > Fire resistance + charcoal = purity potion
 
 > Purity potion + redstone = long purity potion
  
-Prevents you from taking wither damage.
+Remove the wither effect.
 
-## Enderman soul/Enderman essence
+## Enderman soul
 > Awkward potion + ender pearl = Enderman soul potion
 
-Teleports you to a nearby location.
+Teleports you like a Enderman.

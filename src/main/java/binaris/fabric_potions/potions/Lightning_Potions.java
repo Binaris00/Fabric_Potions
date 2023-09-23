@@ -18,7 +18,7 @@ public class Lightning_Potions extends Potion {
     public Lightning_Potions(){
         if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault("lightning_potion.enable", true) && Fabric_Potions_EffectConfig.CONFIG.getOrDefault("lightning.enable", true)){
             LIGHTNING = Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, "lightning_potion"), new Potion(new StatusEffectInstance(Fabric_PotionsEffects.LIGHTNING, 1)));
-            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Burst_Potions.BURST, Items.BLAZE_POWDER, LIGHTNING);
+            BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Combustion_Potions.COMBUSTION, Items.BLAZE_POWDER, LIGHTNING);
         }
     }
 }
