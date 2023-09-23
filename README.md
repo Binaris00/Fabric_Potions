@@ -6,7 +6,7 @@ This mod adds new and balanced potions/effects to your minecraft world with new 
 Also, this mod is fully configurable, so you can use this mod for whatever you want,
 you can use only the effects for your other mods or play with the original config.
 
-This mod has 26 effects/potions, so if you want to see al the descriptions and the recipes go [here](effect_list.md)
+If you want to see all the descriptions and the recipes go [here](effect_list.md)
 
 I also recommend
 using this mod with [Stylish Effects (for a better visual experience
