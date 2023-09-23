@@ -1,5 +1,4 @@
 # Fabric_Potions
-### This mod uses effects ideas from [Potion core](https://www.curseforge.com/minecraft/mc-mods/potion-core), please consider supporting the original mod.
 
 ## Description
 This mod adds new and balanced potions/effects to your minecraft world with new original recipes!!
