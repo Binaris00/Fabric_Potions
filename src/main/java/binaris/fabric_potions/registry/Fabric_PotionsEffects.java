@@ -20,7 +20,6 @@ public class Fabric_PotionsEffects {
     public static StatusEffect PURITY;
     public static StatusEffect ANTIDOTE;
     public static StatusEffect GRAVITATION;
-    public static StatusEffect FLIGHT;
     public static StatusEffect DIAMOND_SKIN;
     public static StatusEffect VULNERABILITY;
     public static StatusEffect CORROSION;
@@ -44,7 +43,6 @@ public class Fabric_PotionsEffects {
         PURITY = new Purity();
         ANTIDOTE = new Antidote();
         GRAVITATION = new Gravitation();
-        FLIGHT = new Flight();
         DIAMOND_SKIN = new Diamond_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, "949E9B54-3C92-11EE-BE56-0242AC120002", Fabric_Potions_EffectConfig.CONFIG.getOrDefault("diamond_skin.value", 1.0), EntityAttributeModifier.Operation.ADDITION);
         VULNERABILITY = new Vulnerability();
         CORROSION = new Corrosion();

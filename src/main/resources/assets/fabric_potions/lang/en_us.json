@@ -20,8 +20,8 @@
   "effect.fabric_potions.magic_inhibition":                                      "Magic inhibition",
   "effect.fabric_potions.magic_inhibition.description":                          "Decreases magic damage.",
 
-  "effect.fabric_potions.enderman_essence":                                      "Enderman soul",
-  "effect.fabric_potions.enderman_essence.description":                          "Teleports you to a nearby location.",
+  "effect.fabric_potions.enderman_soul":                                         "Enderman soul",
+  "effect.fabric_potions.enderman_soul.description":                             "Teleports you to a nearby location.",
 
   "effect.fabric_potions.repairing":                                             "Repairing",
   "effect.fabric_potions.repairing.description":                                 "Repairs your armor and held item.",

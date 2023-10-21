@@ -21,7 +21,6 @@ public class Fabric_Potions implements ModInitializer {
 
 		Fabric_Potions_PotionsConfig.registerConfigs();
 		Fabric_PotionsEffectsPotions.registerPotions();
-
 		LOGGER.info("Loading Fabric Potions");
 	}
 }

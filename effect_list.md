@@ -139,13 +139,6 @@ Damages your armor and held item.
  
 Repairs your armor and held item.
 
-## Flight (Disabled by default)
-> Awkward potion + feather = Flight potion
-
-> Flight potion + redstone = long flight potion
- 
-Make you fly like in creative mode.
-
 ## Antidote
 > Fire aspect potion + spider eye = antidote potion
 
