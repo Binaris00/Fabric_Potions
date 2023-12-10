@@ -1,6 +1,6 @@
 package binaris.fabric_potions.mixin;
 
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import binaris.fabric_potions.registry.FP_Effects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -71,7 +71,7 @@ public abstract class LivingEntityMixin {
         // to the target
         // only if the damage is indirect magic or magic
         if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_FOCUS))){
-            newAmount += (livingEntity.getStatusEffect(FP_Effects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_focus.damage",2.0F);
+            newAmount += (livingEntity.getStatusEffect(FP_Effects.MAGIC_FOCUS).getAmplifier() + 1) * Config.getFloat("magic_focus.damage");
         }
 
         // Magic inhibition
@@ -79,7 +79,7 @@ public abstract class LivingEntityMixin {
         // to the target
         // only if the damage is indirect magic or magic
         if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_INHIBITION)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_INHIBITION))){
-            newAmount -= (livingEntity.getStatusEffect(FP_Effects.MAGIC_INHIBITION).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
+            newAmount -= (livingEntity.getStatusEffect(FP_Effects.MAGIC_INHIBITION).getAmplifier() + 1) * Config.getFloat("magic_inhibition.damage");
         }
 
         // Counter
@@ -93,7 +93,7 @@ public abstract class LivingEntityMixin {
         //Magic Shielding
         // Reduces damage done
         if (livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)) {
-            newAmount -= ((livingEntity.getStatusEffect(FP_Effects.MAGIC_SHIELDING).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_shielding.damage", 3.0F));
+            newAmount -= ((livingEntity.getStatusEffect(FP_Effects.MAGIC_SHIELDING).getAmplifier() + 1) * Config.getFloat("magic_shielding.damage"));
         }
         cir.setReturnValue(newAmount);
     }

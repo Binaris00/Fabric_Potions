@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -14,7 +14,7 @@ public class Purity extends StatusEffect {
     public Purity() {
         super(StatusEffectCategory.BENEFICIAL, 0x0d0c0c);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("purity.enable", true)){
+        if(Config.getBool("purity.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "purity"), this);
         }
     }

@@ -1,6 +1,6 @@
 package binaris.fabric_potions.mixin;
 
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import binaris.fabric_potions.registry.FP_Effects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
@@ -23,16 +23,16 @@ public abstract class PersistentProjectileMixin {
             //True Shot
             // Increase the damage
             if(user.hasStatusEffect(FP_Effects.PERFECTSHOT)) {
-                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + user.getStatusEffect(FP_Effects.PERFECTSHOT).getAmplifier() + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("perfectshot.base_damage", 1.3));
+                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + user.getStatusEffect(FP_Effects.PERFECTSHOT).getAmplifier() + Config.getFloat("perfectshot.base_damage"));
             }
 
             //BadShot
             // Decrease the damage
             if(user.hasStatusEffect(FP_Effects.BADSHOT)){
                 if (user.getStatusEffect(FP_Effects.BADSHOT).getAmplifier() == 0) {
-                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("badshot.reduce_damage", 0.55));
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Config.getFloat("badshot.reduce_damage"));
                 } else {
-                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("badshot.reduce_damage", 0.55) * 2);
+                    persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() - Config.getFloat("badshot.reduce_damage") * 2);
                 }
             }
         }

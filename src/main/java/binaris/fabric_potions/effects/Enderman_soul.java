@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
@@ -21,7 +21,7 @@ public class Enderman_soul extends StatusEffect {
     public Enderman_soul() {
         super(StatusEffectCategory.NEUTRAL, 74003590);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_soul.enable", true)){
+        if(Config.getBool("enderman_soul.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "enderman_soul"), this);
         }
     }
@@ -32,9 +32,9 @@ public class Enderman_soul extends StatusEffect {
         double f = target.getZ();
 
         for (int i = 0; i < 16; ++i) {
-            double g = target.getX() + (target.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_soul.radius", 128.0);
+            double g = target.getX() + (target.getRandom().nextDouble() - 0.5) * Config.getInt("enderman_soul.radius");
             double h = MathHelper.clamp(target.getY() + (double) (target.getRandom().nextInt(16) - 8), target.getWorld().getBottomY(), (target.getWorld().getBottomY() + ((ServerWorld) target.getWorld()).getLogicalHeight() - 1));
-            double j = target.getZ() + (target.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_soul.radius", 128.0);
+            double j = target.getZ() + (target.getRandom().nextDouble() - 0.5) * Config.getInt("enderman_soul.radius");
             if (target.hasVehicle()) {
                 target.stopRiding();
             }
@@ -56,9 +56,9 @@ public class Enderman_soul extends StatusEffect {
         double f = entity.getZ();
 
         for (int i = 0; i < 16; ++i) {
-            double g = entity.getX() + (entity.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_soul.radius", 128.0);
+            double g = entity.getX() + (entity.getRandom().nextDouble() - 0.5) * Config.getInt("enderman_soul.radius");
             double h = MathHelper.clamp(entity.getY() + (double) (entity.getRandom().nextInt(16) - 8), entity.getWorld().getBottomY(), (entity.getWorld().getBottomY() + ((ServerWorld) entity.getWorld()).getLogicalHeight() - 1));
-            double j = entity.getZ() + (entity.getRandom().nextDouble() - 0.5) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("enderman_soul.radius", 128.0);
+            double j = entity.getZ() + (entity.getRandom().nextDouble() - 0.5) * Config.getInt("enderman_soul.radius");
             if (entity.hasVehicle()) {
                 entity.stopRiding();
             }

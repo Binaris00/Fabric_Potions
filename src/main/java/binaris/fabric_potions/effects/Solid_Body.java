@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -12,7 +12,7 @@ public class Solid_Body extends StatusEffect {
     public Solid_Body() {
         super(StatusEffectCategory.BENEFICIAL, 0x0f0a4a);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("solid_body.enable", true)){
+        if(Config.getBool("solid_body.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "solid_body"), this);
         }
     }

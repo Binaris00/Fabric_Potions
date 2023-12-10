@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -14,7 +14,7 @@ public class Well_Fed extends StatusEffect {
     public Well_Fed() {
         super(StatusEffectCategory.BENEFICIAL, 13005603);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("well_fed.enable", true)){
+        if(Config.getBool("well_fed.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "well_fed"), this);
         }
     }
@@ -22,8 +22,8 @@ public class Well_Fed extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity player) {
-            if(entity.getWorld().getTime() % Fabric_Potions_EffectConfig.CONFIG.getOrDefault("well_fed.time", 40) == 0) {
-                player.getHungerManager().add(amplifier + Fabric_Potions_EffectConfig.CONFIG.getOrDefault("well_fed.value", 1), 0.0F);
+            if(entity.getWorld().getTime() % Config.getInt("well_fed.time") == 0) {
+                player.getHungerManager().add(amplifier + Config.getInt("well_fed.value"), 0.0F);
             }
         }
     }

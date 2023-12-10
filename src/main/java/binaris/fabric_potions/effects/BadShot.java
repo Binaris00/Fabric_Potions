@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -12,7 +12,7 @@ public class BadShot extends StatusEffect {
     public BadShot() {
         super(StatusEffectCategory.HARMFUL, 0xff4800);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("badshot.enable", true)){
+        if(Config.getBool("badshot.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "badshot"), this);
         }
     }

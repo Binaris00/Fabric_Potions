@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
@@ -18,7 +18,7 @@ public class Lightning extends StatusEffect {
     public Lightning() {
         super(StatusEffectCategory.HARMFUL, 0x3bffe5);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("lightning.enable", true)){
+        if(Config.getBool("lightning.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "lightning"), this);
         }
     }
@@ -31,14 +31,14 @@ public class Lightning extends StatusEffect {
 
     @Override
     public void applyInstantEffect(@Nullable Entity source, @Nullable Entity attacker, LivingEntity target, int amplifier, double proximity) {
-        LightningEntity lightningEntity = (LightningEntity) EntityType.LIGHTNING_BOLT.create(target.getWorld());
+        LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(target.getWorld());
         lightningEntity.refreshPositionAfterTeleport(Vec3d.ofBottomCenter(target.getBlockPos()));
         target.getWorld().spawnEntity(lightningEntity);
     }
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        LightningEntity lightningEntity = (LightningEntity) EntityType.LIGHTNING_BOLT.create(entity.getWorld());
+        LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(entity.getWorld());
         lightningEntity.refreshPositionAfterTeleport(Vec3d.ofBottomCenter(entity.getBlockPos()));
         entity.getWorld().spawnEntity(lightningEntity);
     }

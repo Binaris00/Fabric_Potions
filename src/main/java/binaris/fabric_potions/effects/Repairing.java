@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -14,7 +14,7 @@ public class Repairing extends StatusEffect {
     public Repairing() {
         super(StatusEffectCategory.BENEFICIAL, 90122227);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.enable", true)){
+        if(Config.getBool("repairing.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "repairing"), this);
         }
     }
@@ -24,13 +24,13 @@ public class Repairing extends StatusEffect {
         if(entity.getWorld().getTime() % 40 == 0) {
             for (ItemStack stack : entity.getArmorItems()) {
                 if (!stack.isEmpty()) {
-                    stack.setDamage(stack.getDamage() - amplifier - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.value", 1));
+                    stack.setDamage(stack.getDamage() - amplifier - Config.getInt("repairing.value"));
                 }
             }
 
             for(ItemStack stack : entity.getHandItems()){
                 if (!stack.isEmpty()) {
-                    stack.setDamage(stack.getDamage() - amplifier - Fabric_Potions_EffectConfig.CONFIG.getOrDefault("repairing.value", 1));
+                    stack.setDamage(stack.getDamage() - amplifier - Config.getInt("repairing.value"));
                 }
             }
         }

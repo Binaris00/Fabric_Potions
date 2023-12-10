@@ -1,7 +1,7 @@
 package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
+import binaris.fabric_potions.config.Config;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -12,7 +12,7 @@ public class Iron_skin extends StatusEffect {
     public Iron_skin() {
         super(StatusEffectCategory.BENEFICIAL, 0xadadad);
 
-        if(Fabric_Potions_EffectConfig.CONFIG.getOrDefault("iron_skin.enable", true)){
+        if(Config.getBool("iron_skin.enable")){
             Registry.register(Registries.STATUS_EFFECT, new Identifier(Fabric_Potions.MOD_ID, "iron_skin"), this);
         }
 

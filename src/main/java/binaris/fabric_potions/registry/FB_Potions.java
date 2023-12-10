@@ -1,7 +1,7 @@
 package binaris.fabric_potions.registry;
 
 import binaris.fabric_potions.Fabric_Potions;
-import binaris.fabric_potions.config.Fabric_Potions_PotionsConfig;
+import binaris.fabric_potions.config.Config;
 import binaris.fabric_potions.mixin.BrewingRecipeRegistryMixin;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;
@@ -213,7 +213,7 @@ public class FB_Potions {
     }
     @Nullable
     private static Potion registerPotion(String name, StatusEffectInstance statusEffectInstance) {
-        if(Fabric_Potions_PotionsConfig.CONFIG.getOrDefault(name+".enable", true)){
+        if(Config.getBool(name+".enable")){
             return Registry.register(Registries.POTION, new Identifier(Fabric_Potions.MOD_ID, name), new Potion(statusEffectInstance));
         }
         return null;
