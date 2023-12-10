@@ -6,7 +6,7 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 
-public class Fabric_PotionsEffects {
+public class FP_Effects {
 
     public static StatusEffect HEALTH_DECREASE;
     public static StatusEffect BLEED;

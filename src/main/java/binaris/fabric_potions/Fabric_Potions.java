@@ -2,8 +2,8 @@ package binaris.fabric_potions;
 
 import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
 import binaris.fabric_potions.config.Fabric_Potions_PotionsConfig;
-import binaris.fabric_potions.registry.Fabric_PotionsEffects;
-import binaris.fabric_potions.registry.Fabric_PotionsEffectsPotions;
+import binaris.fabric_potions.registry.FP_Effects;
+import binaris.fabric_potions.registry.FB_Potions;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,10 +17,10 @@ public class Fabric_Potions implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Fabric_Potions_EffectConfig.registerConfigs();
-		Fabric_PotionsEffects.registerEffects();
+		FP_Effects.registerEffects();
 
 		Fabric_Potions_PotionsConfig.registerConfigs();
-		Fabric_PotionsEffectsPotions.registerPotions();
+		FB_Potions.registerPotions();
 		LOGGER.info("Loading Fabric Potions");
 	}
 }

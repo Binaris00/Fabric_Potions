@@ -2,7 +2,7 @@ package binaris.fabric_potions.effects;
 
 import binaris.fabric_potions.Fabric_Potions;
 import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
-import binaris.fabric_potions.registry.Fabric_PotionsEffects;
+import binaris.fabric_potions.registry.FP_Effects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -21,9 +21,9 @@ public class Bleed extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if(this == Fabric_PotionsEffects.BLEED){
-            if(entity.getWorld().getTime() % Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.time", 40) / (entity.getStatusEffect(Fabric_PotionsEffects.BLEED).getAmplifier() + 1) == 0){
-                entity.damage(entity.getDamageSources().magic(), (float) Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.damage", 3.0F) + entity.getStatusEffect(Fabric_PotionsEffects.BLEED).getAmplifier());
+        if(this == FP_Effects.BLEED){
+            if(entity.getWorld().getTime() % Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.time", 40) / (entity.getStatusEffect(FP_Effects.BLEED).getAmplifier() + 1) == 0){
+                entity.damage(entity.getDamageSources().magic(), (float) Fabric_Potions_EffectConfig.CONFIG.getOrDefault("bleed.damage", 3.0F) + entity.getStatusEffect(FP_Effects.BLEED).getAmplifier());
             }
         }
     }

@@ -1,7 +1,7 @@
 package binaris.fabric_potions.mixin;
 
 import binaris.fabric_potions.config.Fabric_Potions_EffectConfig;
-import binaris.fabric_potions.registry.Fabric_PotionsEffects;
+import binaris.fabric_potions.registry.FP_Effects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageTypes;
@@ -19,26 +19,25 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
-
+    // This is the entity that has the effect :p
     @Unique
     LivingEntity livingEntity = (LivingEntity) (Object) (this);
-
-
     @Shadow public abstract boolean hasStatusEffect(StatusEffect effect);
-
     @ModifyVariable(method = "travel", at = @At("STORE"))
-    private double inject(double q, Vec3d vec3d6){
+    private double FB_inject(double q, Vec3d vec3d6){
         // Gravitation
-        if(this.hasStatusEffect(Fabric_PotionsEffects.GRAVITATION)){
+        // Change the value of q to change the gravity
+        // q = 0.05 is the default value
+        if(this.hasStatusEffect(FP_Effects.GRAVITATION)){
             if(livingEntity instanceof PlayerEntity player && player.isSneaking()){
-                switch(livingEntity.getStatusEffect(Fabric_PotionsEffects.GRAVITATION).getAmplifier()){
+                switch(livingEntity.getStatusEffect(FP_Effects.GRAVITATION).getAmplifier()){
                     case 0 -> q -= 0.06;
                     case 1 -> q -= 0.055;
                     default -> q -= 0.05;
                 }
             }
             else{
-                switch(livingEntity.getStatusEffect(Fabric_PotionsEffects.GRAVITATION).getAmplifier()){
+                switch(livingEntity.getStatusEffect(FP_Effects.GRAVITATION).getAmplifier()){
                     case 0 -> q -= 0.085;
                     case 1 -> q -= 0.089;
                     default -> q -= 0.091;
@@ -48,43 +47,53 @@ public abstract class LivingEntityMixin {
         return q;
     }
     @Inject(at = @At("HEAD"), method = "tickMovement")
-    public void fallDamage(CallbackInfo ci){
+    public void FB_fallDamage(CallbackInfo ci){
         // Gravitation
-        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.GRAVITATION)){
+        // just to make sure that the entity takes fall damage when it has the effect
+        if(livingEntity.hasStatusEffect(FP_Effects.GRAVITATION)){
             livingEntity.onLanding();
         }
     }
 
     @Inject(at = @At("TAIL"), method = "modifyAppliedDamage", cancellable = true)
-    public void moreDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir){
+    public void FP_changeDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir){
         float newAmount = cir.getReturnValue();
         LivingEntity attacker = (LivingEntity) source.getAttacker();
 
         // Vulnerability
-        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.VULNERABILITY)){
-            newAmount += (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(Fabric_PotionsEffects.VULNERABILITY).getAmplifier() + 1)));
+        // Changes the value of newAmount to add more damage
+        if(livingEntity.hasStatusEffect(FP_Effects.VULNERABILITY)){
+            newAmount += (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(FP_Effects.VULNERABILITY).getAmplifier() + 1)));
         }
 
         // Magic focus
-        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS))){
-            newAmount += (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_focus.damage",2.0F);
+        // Changes the value of newAmount to add more damage
+        // to the target
+        // only if the damage is indirect magic or magic
+        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_FOCUS))){
+            newAmount += (livingEntity.getStatusEffect(FP_Effects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_focus.damage",2.0F);
         }
 
         // Magic inhibition
-        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION))){
-            newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
+        // Changes the value of newAmount to reduce damage done
+        // to the target
+        // only if the damage is indirect magic or magic
+        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_INHIBITION)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_INHIBITION))){
+            newAmount -= (livingEntity.getStatusEffect(FP_Effects.MAGIC_INHIBITION).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
         }
 
         // Counter
-        if(livingEntity.hasStatusEffect(Fabric_PotionsEffects.COUNTER)){
-            attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(Fabric_PotionsEffects.COUNTER).getAmplifier() + 1);
+        // Return damage to the attacker
+        if(livingEntity.hasStatusEffect(FP_Effects.COUNTER)){
+            if(attacker != null) {
+                attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(FP_Effects.COUNTER).getAmplifier() + 1);
+            }
         }
 
         //Magic Shielding
-        if(attacker != null) {
-            if (attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || attacker.hasStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)) {
-                newAmount -= ((attacker.getStatusEffect(Fabric_PotionsEffects.MAGIC_SHIELDING).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_shielding.damage", 3.0F));
-            }
+        // Reduces damage done
+        if (livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)) {
+            newAmount -= ((livingEntity.getStatusEffect(FP_Effects.MAGIC_SHIELDING).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_shielding.damage", 3.0F));
         }
         cir.setReturnValue(newAmount);
     }
