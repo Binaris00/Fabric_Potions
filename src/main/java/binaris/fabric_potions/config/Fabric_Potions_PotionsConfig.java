@@ -82,8 +82,8 @@ public class Fabric_Potions_PotionsConfig {
         configs.emptyLine();
 
         configs.addComment("Iron skin potion");
-        configs.addKeyValuePair(new Pair<>("iron_skin.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("long_iron_skin.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("iron_skin_potion.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("long_iron_skin_potion.enable", true), "boolean");
 
         configs.emptyLine();
 
@@ -115,7 +115,7 @@ public class Fabric_Potions_PotionsConfig {
         configs.addComment("PerfectShot potion");
         configs.addKeyValuePair(new Pair<>("perfectshot_potion.enable", true), "boolean");
         configs.addKeyValuePair(new Pair<>("long_perfectshot_potion.enable", true), "boolean");
-        configs.addKeyValuePair(new Pair<>("strong_perfectshot.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("strong_perfectshot_potion.enable", true), "boolean");
 
         configs.emptyLine();
 
@@ -132,7 +132,7 @@ public class Fabric_Potions_PotionsConfig {
         configs.emptyLine();
 
         configs.addComment("Solid body potion");
-        configs.addKeyValuePair(new Pair<>("solid_body.enable", true), "boolean");
+        configs.addKeyValuePair(new Pair<>("solid_body_potion.enable", true), "boolean");
 
         configs.emptyLine();
 

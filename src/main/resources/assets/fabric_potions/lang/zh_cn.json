@@ -1,0 +1,315 @@
+{
+  "effect.fabric_potions.health_decrease" :                                      "生命下降",
+  "effect.fabric_potions.health_decrease.description":                           "降低生命值上限",
+
+  "effect.fabric_potions.bleed":                                                 "流血",
+  "effect.fabric_potions.bleed.description":                                     "每隔一段时间损失生命值",
+
+  "effect.fabric_potions.well_fed":                                              "充饥",
+  "effect.fabric_potions.well_fed.description":                                  "回复饥饿值",
+
+  "effect.fabric_potions.perfectshot":                                           "紧弦",
+  "effect.fabric_potions.perfectshot.description":                               "增加自身弹射物造成的伤害",
+
+  "effect.fabric_potions.badshot":                                               "松弛",
+  "effect.fabric_potions.badshot.description":                                   "降低自身弹射物造成的伤害",
+
+  "effect.fabric_potions.magic_focus":                                           "魔力",
+  "effect.fabric_potions.magic_focus.description":                               "增加自身魔法攻击造成的伤害",
+
+  "effect.fabric_potions.magic_inhibition":                                      "魔法弱化",
+  "effect.fabric_potions.magic_inhibition.description":                          "降低自身魔法攻击造成的伤害",
+
+  "effect.fabric_potions.enderman_soul":                                         "末影之力",
+  "effect.fabric_potions.enderman_soul.description":                             "将目标传送至附近的随机地方",
+
+  "effect.fabric_potions.repairing":                                             "修复",
+  "effect.fabric_potions.repairing.description":                                 "修复穿着的护甲以及手持物",
+
+  "effect.fabric_potions.solid_body":                                            "击退抗性",
+  "effect.fabric_potions.solid_body.description":                                "减少击退的距离",
+
+  "effect.fabric_potions.broken_armor":                                          "破甲",
+  "effect.fabric_potions.broken_armor.description":                              "降低护甲防御值",
+
+  "effect.fabric_potions.corrosion":                                             "腐蚀",
+  "effect.fabric_potions.corrosion.description":                                 "损坏装备和手持物，降低耐久度",
+
+  "effect.fabric_potions.purity":                                                "净化",
+  "effect.fabric_potions.purity.description":                                    "免疫凋零效果造成的伤害",
+
+  "effect.fabric_potions.antidote":                                              "解毒",
+  "effect.fabric_potions.antidote.description":                                  "免疫中毒效果造成的伤害",
+
+  "effect.fabric_potions.gravitation":                                           "失重",
+  "effect.fabric_potions.gravitation.description":                               "使目标失重漂浮起来(按潜行键下降)",
+
+  "effect.fabric_potions.flight":                                                "飞行",
+  "effect.fabric_potions.flight.description":                                    "像创造模式一样飞翔",
+
+  "effect.fabric_potions.diamond_skin":                                          "坚韧",
+  "effect.fabric_potions.diamond_skin.description":                              "提高自身韧性值，增强高额伤害的减免效果",
+
+  "effect.fabric_potions.vulnerability":                                         "弱点暴露",
+  "effect.fabric_potions.vulnerability.description":                             "使自身收到的伤害增加",
+
+  "effect.fabric_potions.counter":                                               "反伤",
+  "effect.fabric_potions.counter.description":                                   "将自身收到的伤害的一部分反弹给攻击者",
+
+  "effect.fabric_potions.combustion":                                            "灼烧",
+  "effect.fabric_potions.combustion.description":                                "使自身不断着火",
+
+  "effect.fabric_potions.lightning":                                             "雷击",
+  "effect.fabric_potions.lightning.description":                                 "产生雷电攻击目标",
+
+  "effect.fabric_potions.iron_skin":                                             "刚性",
+  "effect.fabric_potions.iron_skin.description":                                 "增加自身护甲值",
+
+  "effect.fabric_potions.magic_shielding":                                       "魔法抗性",
+  "effect.fabric_potions.magic_shielding.description":                           "减少自身受到的魔法伤害",
+
+  "item.minecraft.tipped_arrow.effect.antidote_potion":                          "解毒之箭",
+  "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "解毒之箭",
+  "item.minecraft.lingering_potion.effect.antidote_potion":                      "滞留型解毒药水",
+  "item.minecraft.lingering_potion.effect.long_antidote_potion":                 "滞留型解毒药水",
+  "item.minecraft.potion.effect.antidote_potion":                                "解毒药水",
+  "item.minecraft.potion.effect.long_antidote_potion":                           "解毒药水",
+  "item.minecraft.splash_potion.effect.antidote_potion":                         "喷溅型解毒药水",
+  "item.minecraft.splash_potion.effect.long_antidote_potion":                    "喷溅型解毒药水",
+
+
+  "item.minecraft.tipped_arrow.effect.bleed_potion":                             "流血之箭",
+  "item.minecraft.tipped_arrow.effect.long_bleed_potion":                        "流血之箭",
+  "item.minecraft.tipped_arrow.effect.strong_bleed_potion":                      "流血之箭",
+  "item.minecraft.lingering_potion.effect.bleed_potion":                         "滞留型流血药水",
+  "item.minecraft.lingering_potion.effect.long_bleed_potion":                    "滞留型流血药水",
+  "item.minecraft.lingering_potion.effect.strong_bleed_potion":                  "滞留型流血药水",
+  "item.minecraft.potion.effect.bleed_potion":                                   "流血药水",
+  "item.minecraft.potion.effect.long_bleed_potion":                              "流血药水",
+  "item.minecraft.potion.effect.strong_bleed_potion":                            "流血药水",
+  "item.minecraft.splash_potion.effect.bleed_potion":                            "喷溅型流血药水",
+  "item.minecraft.splash_potion.effect.long_bleed_potion":                       "喷溅型流血药水",
+  "item.minecraft.splash_potion.effect.strong_bleed_potion":                     "喷溅型流血药水",
+
+
+  "item.minecraft.tipped_arrow.effect.broken_armor_potion":                      "破甲之箭",
+  "item.minecraft.tipped_arrow.effect.long_broken_armor_potion":                 "破甲之箭",
+  "item.minecraft.lingering_potion.effect.broken_armor_potion":                  "滞留型破甲药水",
+  "item.minecraft.lingering_potion.effect.long_broken_armor_potion":             "滞留型破甲药水",
+  "item.minecraft.potion.effect.broken_armor_potion":                            "破甲药水",
+  "item.minecraft.potion.effect.long_broken_armor_potion":                       "破甲药水",
+  "item.minecraft.splash_potion.effect.broken_armor_potion":                     "喷溅型破甲药水",
+  "item.minecraft.splash_potion.effect.long_broken_armor_potion":                "喷溅型破甲药水",
+
+
+  "item.minecraft.tipped_arrow.effect.corrosion_potion":                         "腐蚀之箭",
+  "item.minecraft.tipped_arrow.effect.long_corrosion_potion":                    "腐蚀之箭",
+  "item.minecraft.lingering_potion.effect.corrosion_potion":                     "滞留型腐蚀药水",
+  "item.minecraft.lingering_potion.effect.long_corrosion_potion":                "滞留型腐蚀药水",
+  "item.minecraft.potion.effect.corrosion_potion":                               "腐蚀药水",
+  "item.minecraft.potion.effect.long_corrosion_potion":                          "腐蚀药水",
+  "item.minecraft.splash_potion.effect.corrosion_potion":                        "喷溅型腐蚀药水",
+  "item.minecraft.splash_potion.effect.long_corrosion_potion":                   "喷溅型腐蚀药水",
+
+
+  "item.minecraft.tipped_arrow.effect.diamond_skin_potion":                      "强韧之箭",
+  "item.minecraft.tipped_arrow.effect.long_diamond_skin_potion":                 "强韧之箭",
+  "item.minecraft.lingering_potion.effect.diamond_skin_potion":                  "滞留型强韧药水",
+  "item.minecraft.lingering_potion.effect.long_diamond_skin_potion":             "滞留型强韧药水",
+  "item.minecraft.potion.effect.diamond_skin_potion":                            "强韧药水",
+  "item.minecraft.potion.effect.long_diamond_skin_potion":                       "强韧药水",
+  "item.minecraft.splash_potion.effect.diamond_skin_potion":                     "喷溅型强韧药水",
+  "item.minecraft.splash_potion.effect.long_diamond_skin_potion":                "喷溅型强韧药水",
+
+
+  "item.minecraft.tipped_arrow.effect.enderman_soul_potion":                     "末影之箭",
+  "item.minecraft.lingering_potion.effect.enderman_soul_potion":                 "滞留型末影药水",
+  "item.minecraft.potion.effect.enderman_soul_potion":                           "末影药水",
+  "item.minecraft.splash_potion.effect.enderman_soul_potion":                    "喷溅型末影药水",
+
+
+  "item.minecraft.tipped_arrow.effect.flight_potion":                            "飞行之箭",
+  "item.minecraft.tipped_arrow.effect.long_flight_potion":                       "飞行之箭",
+  "item.minecraft.lingering_potion.effect.flight_potion":                        "滞留型飞行药水",
+  "item.minecraft.lingering_potion.effect.long_flight_potion":                   "滞留型飞行药水",
+  "item.minecraft.potion.effect.flight_potion":                                  "飞行药水",
+  "item.minecraft.potion.effect.long_flight_potion":                             "飞行药水",
+  "item.minecraft.splash_potion.effect.flight_potion":                           "喷溅型飞行药水",
+  "item.minecraft.splash_potion.effect.long_flight_potion":                      "喷溅型飞行药水",
+
+
+  "item.minecraft.tipped_arrow.effect.gravitation_potion":                       "失重之箭",
+  "item.minecraft.tipped_arrow.effect.long_gravitation_potion":                  "失重之箭",
+  "item.minecraft.tipped_arrow.effect.strong_gravitation_potion":                "失重之箭",
+  "item.minecraft.lingering_potion.effect.gravitation_potion":                   "滞留型失重药水",
+  "item.minecraft.lingering_potion.effect.long_gravitation_potion":              "滞留型失重药水",
+  "item.minecraft.lingering_potion.effect.strong_gravitation_potion":            "滞留型失重药水",
+  "item.minecraft.potion.effect.gravitation_potion":                             "失重药水",
+  "item.minecraft.potion.effect.long_gravitation_potion":                        "失重药水",
+  "item.minecraft.potion.effect.strong_gravitation_potion":                      "失重药水",
+  "item.minecraft.splash_potion.effect.gravitation_potion":                      "喷溅型失重药水",
+  "item.minecraft.splash_potion.effect.long_gravitation_potion":                 "喷溅型失重药水",
+  "item.minecraft.splash_potion.effect.strong_gravitation_potion":               "喷溅型失重药水",
+
+
+  "item.minecraft.tipped_arrow.effect.health_decrease_potion":                   "低血之箭",
+  "item.minecraft.tipped_arrow.effect.long_health_decrease_potion":              "低血之箭",
+  "item.minecraft.tipped_arrow.effect.strong_health_decrease_potion":            "低血之箭",
+  "item.minecraft.lingering_potion.effect.health_decrease_potion":               "滞留型低血药水",
+  "item.minecraft.lingering_potion.effect.long_health_decrease_potion":          "滞留型低血药水",
+  "item.minecraft.lingering_potion.effect.strong_health_decrease_potion":        "滞留型低血药水",
+  "item.minecraft.potion.effect.health_decrease_potion":                         "低血药水",
+  "item.minecraft.potion.effect.long_health_decrease_potion":                    "低血药水",
+  "item.minecraft.potion.effect.strong_health_decrease_potion":                  "低血药水",
+  "item.minecraft.splash_potion.effect.health_decrease_potion":                  "喷溅型低血药水",
+  "item.minecraft.splash_potion.effect.long_health_decrease_potion":             "喷溅型低血药水",
+  "item.minecraft.splash_potion.effect.strong_health_decrease_potion":           "喷溅型低血药水",
+
+
+  "item.minecraft.tipped_arrow.effect.badshot_potion":                           "松弛之箭",
+  "item.minecraft.tipped_arrow.effect.long_badshot_potion":                      "松弛之箭",
+  "item.minecraft.lingering_potion.effect.badshot_potion":                       "滞留型松弛药水",
+  "item.minecraft.lingering_potion.effect.long_badshot_potion":                  "滞留型松弛药水",
+  "item.minecraft.potion.effect.badshot_potion":                                 "松弛药水",
+  "item.minecraft.potion.effect.long_badshot_potion":                            "松弛药水",
+  "item.minecraft.splash_potion.effect.badshot_potion":                          "喷溅型松弛药水",
+  "item.minecraft.splash_potion.effect.long_badshot_potion":                     "喷溅型松弛药水",
+
+
+  "item.minecraft.tipped_arrow.effect.purity_potion":                            "净化之箭",
+  "item.minecraft.tipped_arrow.effect.long_purity_potion":                       "净化之箭",
+  "item.minecraft.lingering_potion.effect.purity_potion":                        "滞留型净化药水",
+  "item.minecraft.lingering_potion.effect.long_purity_potion":                   "滞留型净化药水",
+  "item.minecraft.potion.effect.purity_potion":                                  "净化药水",
+  "item.minecraft.potion.effect.long_purity_potion":                             "净化药水",
+  "item.minecraft.splash_potion.effect.purity_potion":                           "喷溅型净化药水",
+  "item.minecraft.splash_potion.effect.long_purity_potion":                      "喷溅型净化药水",
+
+
+  "item.minecraft.tipped_arrow.effect.repairing_potion":                         "修复之箭",
+  "item.minecraft.tipped_arrow.effect.long_repairing_potion":                    "修复之箭",
+  "item.minecraft.lingering_potion.effect.repairing_potion":                     "滞留型修复药水",
+  "item.minecraft.lingering_potion.effect.long_repairing_potion":                "滞留型修复药水",
+  "item.minecraft.potion.effect.repairing_potion":                               "修复药水",
+  "item.minecraft.potion.effect.long_repairing_potion":                          "修复药水",
+  "item.minecraft.splash_potion.effect.repairing_potion":                        "喷溅型修复药水",
+  "item.minecraft.splash_potion.effect.long_repairing_potion":                   "喷溅型修复药水",
+
+
+  "item.minecraft.tipped_arrow.effect.solid_body_potion":                        "沉稳之箭",
+  "item.minecraft.lingering_potion.effect.solid_body_potion":                    "滞留型沉稳药水",
+  "item.minecraft.potion.effect.solid_body_potion":                              "沉稳药水",
+  "item.minecraft.splash_potion.effect.solid_body_potion":                       "喷溅型沉稳药水",
+
+
+  "item.minecraft.tipped_arrow.effect.perfectshot_potion":                       "紧弦之箭",
+  "item.minecraft.tipped_arrow.effect.long_perfectshot_potion":                  "紧弦之箭",
+  "item.minecraft.tipped_arrow.effect.strong_perfectshot_potion":                "紧弦之箭",
+  "item.minecraft.lingering_potion.effect.perfectshot_potion":                   "滞留型紧弦药水",
+  "item.minecraft.lingering_potion.effect.long_perfectshot_potion":              "滞留型紧弦药水",
+  "item.minecraft.lingering_potion.effect.strong_perfectshot_potion":            "滞留型紧弦药水",
+  "item.minecraft.potion.effect.perfectshot_potion":                             "紧弦药水",
+  "item.minecraft.potion.effect.long_perfectshot_potion":                        "紧弦药水",
+  "item.minecraft.potion.effect.strong_perfectshot_potion":                      "紧弦药水",
+  "item.minecraft.splash_potion.effect.perfectshot_potion":                      "喷溅型紧弦药水",
+  "item.minecraft.splash_potion.effect.long_perfectshot_potion":                 "喷溅型紧弦药水",
+  "item.minecraft.splash_potion.effect.strong_perfectshot_potion":               "喷溅型紧弦药水",
+
+
+  "item.minecraft.tipped_arrow.effect.vulnerability_potion":                     "弱点之箭",
+  "item.minecraft.tipped_arrow.effect.long_vulnerability_potion":                "弱点之箭",
+  "item.minecraft.tipped_arrow.effect.strong_vulnerability_potion":              "弱点之箭",
+  "item.minecraft.lingering_potion.effect.vulnerability_potion":                 "滞留型弱点药水",
+  "item.minecraft.lingering_potion.effect.long_vulnerability_potion":            "滞留型弱点药水",
+  "item.minecraft.lingering_potion.effect.strong_vulnerability_potion":          "滞留型弱点药水",
+  "item.minecraft.potion.effect.vulnerability_potion":                           "弱点药水",
+  "item.minecraft.potion.effect.long_vulnerability_potion":                      "弱点药水",
+  "item.minecraft.potion.effect.strong_vulnerability_potion":                    "弱点药水",
+  "item.minecraft.splash_potion.effect.vulnerability_potion":                    "喷溅型弱点药水",
+  "item.minecraft.splash_potion.effect.long_vulnerability_potion":               "喷溅型弱点药水",
+  "item.minecraft.splash_potion.effect.strong_vulnerability_potion":             "喷溅型弱点药水",
+
+
+  "item.minecraft.tipped_arrow.effect.well_fed_potion":                          "充饥之箭",
+  "item.minecraft.tipped_arrow.effect.long_well_fed_potion":                     "充饥之箭",
+  "item.minecraft.lingering_potion.effect.well_fed_potion":                      "滞留型充饥药水",
+  "item.minecraft.lingering_potion.effect.long_well_fed_potion":                 "滞留型充饥药水",
+  "item.minecraft.potion.effect.well_fed_potion":                                "充饥药水",
+  "item.minecraft.potion.effect.long_well_fed_potion":                           "充饥药水",
+  "item.minecraft.splash_potion.effect.well_fed_potion":                         "喷溅型充饥药水",
+  "item.minecraft.splash_potion.effect.long_well_fed_potion":                    "喷溅型充饥药水",
+
+
+  "item.minecraft.tipped_arrow.effect.magic_inhibition_potion":                  "去魔之箭",
+  "item.minecraft.tipped_arrow.effect.long_magic_inhibition_potion":             "去魔之箭",
+  "item.minecraft.tipped_arrow.effect.strong_magic_inhibition_potion":           "去魔之箭",
+  "item.minecraft.lingering_potion.effect.magic_inhibition_potion":              "滞留型去魔药水",
+  "item.minecraft.lingering_potion.effect.long_magic_inhibition_potion":         "滞留型去魔药水",
+  "item.minecraft.lingering_potion.effect.strong_magic_inhibition_potion":       "滞留型去魔药水",
+  "item.minecraft.potion.effect.magic_inhibition_potion":                        "去魔药水",
+  "item.minecraft.potion.effect.long_magic_inhibition_potion":                   "去魔药水",
+  "item.minecraft.potion.effect.strong_magic_inhibition_potion":                 "去魔药水",
+  "item.minecraft.splash_potion.effect.magic_inhibition_potion":                 "喷溅型去魔药水",
+  "item.minecraft.splash_potion.effect.long_magic_inhibition_potion":            "喷溅型去魔药水",
+  "item.minecraft.splash_potion.effect.strong_magic_inhibition_potion":          "喷溅型去魔药水",
+
+
+  "item.minecraft.tipped_arrow.effect.magic_focus_potion":                       "魔力之箭",
+  "item.minecraft.tipped_arrow.effect.long_magic_focus_potion":                  "魔力之箭",
+  "item.minecraft.tipped_arrow.effect.strong_magic_focus_potion":                "魔力之箭",
+  "item.minecraft.lingering_potion.effect.magic_focus_potion":                   "滞留型魔力药水",
+  "item.minecraft.lingering_potion.effect.long_magic_focus_potion":              "滞留型魔力药水",
+  "item.minecraft.lingering_potion.effect.strong_magic_focus_potion":            "滞留型魔力药水",
+  "item.minecraft.potion.effect.magic_focus_potion":                             "魔力药水",
+  "item.minecraft.potion.effect.long_magic_focus_potion":                        "魔力药水",
+  "item.minecraft.potion.effect.strong_magic_focus_potion":                      "魔力药水",
+  "item.minecraft.splash_potion.effect.magic_focus_potion":                      "喷溅型魔力药水",
+  "item.minecraft.splash_potion.effect.long_magic_focus_potion":                 "喷溅型魔力药水",
+  "item.minecraft.splash_potion.effect.strong_magic_focus_potion":               "喷溅型魔力药水",
+
+
+  "item.minecraft.tipped_arrow.effect.counter_potion":                           "反伤之箭",
+  "item.minecraft.tipped_arrow.effect.long_counter_potion":                      "反伤之箭",
+  "item.minecraft.lingering_potion.effect.counter_potion":                       "滞留型反伤药水",
+  "item.minecraft.lingering_potion.effect.long_counter_potion":                  "滞留型反伤药水",
+  "item.minecraft.potion.effect.counter_potion":                                 "反伤药水",
+  "item.minecraft.potion.effect.long_counter_potion":                            "反伤药水",
+  "item.minecraft.splash_potion.effect.counter_potion":                          "喷溅型反伤药水",
+  "item.minecraft.splash_potion.effect.long_counter_potion":                     "喷溅型反伤药水",
+
+
+  "item.minecraft.tipped_arrow.effect.combustion_potion":                        "灼热之箭",
+  "item.minecraft.tipped_arrow.effect.long_combustion_potion":                   "灼热之箭",
+  "item.minecraft.lingering_potion.effect.combustion_potion":                    "滞留型灼热药水",
+  "item.minecraft.lingering_potion.effect.long_combustion_potion":               "滞留型灼热药水",
+  "item.minecraft.potion.effect.combustion_potion":                              "灼热药水",
+  "item.minecraft.potion.effect.long_combustion_potion":                         "灼热药水",
+  "item.minecraft.splash_potion.effect.combustion_potion":                       "喷溅型灼热药水",
+  "item.minecraft.splash_potion.effect.long_combustion_potion":                  "喷溅型灼热药水",
+
+
+  "item.minecraft.tipped_arrow.effect.lightning_potion":                         "落雷之箭",
+  "item.minecraft.lingering_potion.effect.lightning_potion":                     "滞留型落雷药水",
+  "item.minecraft.potion.effect.lightning_potion":                               "落雷药水",
+  "item.minecraft.splash_potion.effect.lightning_potion":                        "喷溅型落雷药水",
+
+
+  "item.minecraft.tipped_arrow.effect.iron_skin_potion":                         "刚性之箭",
+  "item.minecraft.tipped_arrow.effect.long_iron_skin_potion":                    "刚性之箭",
+  "item.minecraft.lingering_potion.effect.iron_skin_potion":                     "滞留型刚性药水",
+  "item.minecraft.lingering_potion.effect.long_iron_skin_potion":                "滞留型刚性药水",
+  "item.minecraft.potion.effect.iron_skin_potion":                               "刚性药水",
+  "item.minecraft.potion.effect.long_iron_skin_potion":                          "刚性药水",
+  "item.minecraft.splash_potion.effect.iron_skin_potion":                        "喷溅型刚性药水",
+  "item.minecraft.splash_potion.effect.long_iron_skin_potion":                   "喷溅型刚性药水",
+
+
+  "item.minecraft.tipped_arrow.effect.magic_shielding_potion":                   "魔抗之箭",
+  "item.minecraft.tipped_arrow.effect.long_magic_shielding_potion":              "魔抗之箭",
+  "item.minecraft.lingering_potion.effect.magic_shielding_potion":               "滞留型魔抗药水",
+  "item.minecraft.lingering_potion.effect.long_magic_shielding_potion":          "滞留型魔抗药水",
+  "item.minecraft.potion.effect.magic_shielding_potion":                         "魔抗药水",
+  "item.minecraft.potion.effect.long_magic_shielding_potion":                    "魔抗药水",
+  "item.minecraft.splash_potion.effect.magic_shielding_potion":                  "喷溅型魔抗药水",
+  "item.minecraft.splash_potion.effect.long_magic_shielding_potion":             "喷溅型魔抗药水"
+}

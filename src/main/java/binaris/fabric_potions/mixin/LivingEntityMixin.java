@@ -71,8 +71,8 @@ public abstract class LivingEntityMixin {
         }
 
         // Magic inhibition
-        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION))){
-            newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_FOCUS).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
+        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION))){
+            newAmount -= (livingEntity.getStatusEffect(Fabric_PotionsEffects.MAGIC_INHIBITION).getAmplifier() + 1) * Fabric_Potions_EffectConfig.CONFIG.getOrDefault("magic_inhibition.damage",2.0F);
         }
 
         // Counter
