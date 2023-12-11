@@ -157,3 +157,7 @@ Remove the wither effect.
 > Awkward potion + ender pearl = Enderman soul potion
 
 Teleports you like a Enderman.
+
+## Immortality (Unfinished)
+
+You can't receive damage, except for the void and warden sonically charged attack.

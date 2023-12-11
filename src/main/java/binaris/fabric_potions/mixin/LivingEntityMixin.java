@@ -95,6 +95,12 @@ public abstract class LivingEntityMixin {
         if (livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC)) {
             newAmount -= ((livingEntity.getStatusEffect(FP_Effects.MAGIC_SHIELDING).getAmplifier() + 1) * Config.getFloat("magic_shielding.damage"));
         }
+
+        // Inmortality
+        // Makes the entity invulnerable
+        if(livingEntity.hasStatusEffect(FP_Effects.INMORTALITY)){
+            newAmount = 0;
+        }
         cir.setReturnValue(newAmount);
     }
 }

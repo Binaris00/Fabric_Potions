@@ -30,6 +30,7 @@ public class FP_Effects {
     public static StatusEffect LIGHTNING;
     public static StatusEffect IRON_SKIN;
     public static StatusEffect MAGIC_SHIELDING;
+    public static StatusEffect INMORTALITY;
     public static void registerEffects(){
         HEALTH_DECREASE = new Health_Decrease().addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "4BC011F2-3606-11EE-BE56-0242AC120002", Config.getFloat("health_decrease.hearths"), EntityAttributeModifier.Operation.ADDITION);
         BLEED = new Bleed();
@@ -53,5 +54,6 @@ public class FP_Effects {
         LIGHTNING = new Lightning();
         IRON_SKIN = new Iron_skin().addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "0347065A-492B-11EE-BE56-0242AC120002", Config.getFloat("iron_skin.value"), EntityAttributeModifier.Operation.ADDITION);
         MAGIC_SHIELDING = new Magic_Shielding();
+        INMORTALITY = new Inmortality();
     }
 }

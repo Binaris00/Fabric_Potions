@@ -78,6 +78,11 @@ public class FB_Config {
 
         CONFIG_EFFECTS.emptyLine();
 
+        CONFIG_EFFECTS.addComment("Inmortality effect config");
+        CONFIG_EFFECTS.set("inmortality.enable", true);
+
+        CONFIG_EFFECTS.emptyLine();
+
         CONFIG_EFFECTS.addComment("Iron skin effect config");
         CONFIG_EFFECTS.set("iron_skin.enable", true);
         CONFIG_EFFECTS.set("iron_skin.value", 2.0);
@@ -208,6 +213,11 @@ public class FB_Config {
         CONFIG_POTIONS.addComment("Health Decrease potion (Disabled by default)");
         CONFIG_POTIONS.set("health_decrease_potion.enable", false);
         CONFIG_POTIONS.set("long_health_decrease_potion.enable", false);
+
+        CONFIG_POTIONS.emptyLine();
+
+        CONFIG_POTIONS.addComment("Inmortality potion");
+        CONFIG_POTIONS.set("inmortality_potion.enable", true);
 
         CONFIG_POTIONS.emptyLine();
 

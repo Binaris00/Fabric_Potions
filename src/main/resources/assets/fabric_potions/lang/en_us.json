@@ -68,6 +68,9 @@
   "effect.fabric_potions.magic_shielding":                                       "Magic shielding",
   "effect.fabric_potions.magic_shielding.description":                           "Protects you from magic damage.",
 
+  "effect.fabric_potions.inmortality":                                           "Inmortality",
+  "effect.fabric_potions.inmortality.description":                               "You can't receive damage, except for the void and warden sonically charged attack.",
+
   "item.minecraft.tipped_arrow.effect.antidote_potion":                          "Arrow of Antidote",
   "item.minecraft.tipped_arrow.effect.long_antidote_potion":                     "Arrow of Antidote",
   "item.minecraft.lingering_potion.effect.antidote_potion":                      "Lingering Potion of Antidote",
@@ -311,5 +314,14 @@
   "item.minecraft.potion.effect.magic_shielding_potion":                         "Potion of Magic shielding",
   "item.minecraft.potion.effect.long_magic_shielding_potion":                    "Potion of Magic shielding",
   "item.minecraft.splash_potion.effect.magic_shielding_potion":                  "Splash Potion of Magic shielding",
-  "item.minecraft.splash_potion.effect.long_magic_shielding_potion":             "Splash Potion of Magic shielding"
+  "item.minecraft.splash_potion.effect.long_magic_shielding_potion":             "Splash Potion of Magic shielding",
+
+  "item.minecraft.tipped_arrow.effect.inmortality_potion":                       "Arrow of Inmortality",
+  "item.minecraft.tipped_arrow.effect.long_inmortality_potion":                  "Arrow of Inmortality",
+  "item.minecraft.lingering_potion.effect.inmortality_potion":                   "Lingering Potion of Inmortality",
+  "item.minecraft.lingering_potion.effect.long_inmortality_potion":              "Lingering Potion of Inmortality",
+  "item.minecraft.potion.effect.inmortality_potion":                             "Potion of Inmortality",
+  "item.minecraft.potion.effect.long_inmortality_potion":                        "Potion of Inmortality",
+  "item.minecraft.splash_potion.effect.inmortality_potion":                      "Splash Potion of Inmortality",
+  "item.minecraft.splash_potion.effect.long_inmortality_potion":                 "Splash Potion of Inmortality"
 }
