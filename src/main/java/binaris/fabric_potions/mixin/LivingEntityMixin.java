@@ -68,18 +68,24 @@ public abstract class LivingEntityMixin {
 
         // Magic focus
         // Changes the value of newAmount to add more damage
+        // Not effecting when attacker damages himself
         // to the target
         // only if the damage is indirect magic or magic
-        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_FOCUS)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_FOCUS))){
-            newAmount += (livingEntity.getStatusEffect(FP_Effects.MAGIC_FOCUS).getAmplifier() + 1) * Config.getFloat("magic_focus.damage");
+        if(attacker != null && attacker != livingEntity) {
+            if (attacker.hasStatusEffect(FP_Effects.MAGIC_FOCUS) && source.isOf(DamageTypes.INDIRECT_MAGIC) || attacker.hasStatusEffect(FP_Effects.MAGIC_FOCUS) && source.isOf(DamageTypes.MAGIC)) {
+                newAmount += ((attacker.getStatusEffect(FP_Effects.MAGIC_FOCUS).getAmplifier() + 1) * Config.getFloat("magic_focus.damage"));
+            }
         }
 
         // Magic inhibition
         // Changes the value of newAmount to reduce damage done
+        // Not effecting when attacker damages himself
         // to the target
         // only if the damage is indirect magic or magic
-        if((source.isOf(DamageTypes.INDIRECT_MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_INHIBITION)) || (source.isOf(DamageTypes.MAGIC) && livingEntity.hasStatusEffect(FP_Effects.MAGIC_INHIBITION))){
-            newAmount -= (livingEntity.getStatusEffect(FP_Effects.MAGIC_INHIBITION).getAmplifier() + 1) * Config.getFloat("magic_inhibition.damage");
+        if(attacker != null && attacker != livingEntity) {
+            if (attacker.hasStatusEffect(FP_Effects.MAGIC_INHIBITION) && source.isOf(DamageTypes.INDIRECT_MAGIC) || attacker.hasStatusEffect(FP_Effects.MAGIC_INHIBITION) && source.isOf(DamageTypes.MAGIC)) {
+                newAmount -= ((attacker.getStatusEffect(FP_Effects.MAGIC_INHIBITION).getAmplifier() + 1) * Config.getFloat("magic_inhibition.damage"));
+            }
         }
 
         // Counter
