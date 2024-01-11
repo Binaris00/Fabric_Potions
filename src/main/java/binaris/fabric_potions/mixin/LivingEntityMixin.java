@@ -81,7 +81,6 @@ public abstract class LivingEntityMixin {
             // Return damage to the attacker
             if(livingEntity.hasStatusEffect(FP_Effects.COUNTER))
                 attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(FP_Effects.COUNTER).getAmplifier() + 1);
-            cir.setReturnValue(newAmount);
         }
         // Vulnerability
         // Changes the value of newAmount to add more damage
