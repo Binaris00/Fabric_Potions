@@ -58,14 +58,8 @@ public abstract class LivingEntityMixin {
     @Inject(at = @At("TAIL"), method = "modifyAppliedDamage", cancellable = true)
     public void FP_changeDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
         Entity entity = source.getAttacker();
+        float newAmount = cir.getReturnValue();
         if (entity instanceof LivingEntity attacker) {
-            float newAmount = cir.getReturnValue();
-
-            // Vulnerability
-            // Changes the value of newAmount to add more damage
-            if(livingEntity.hasStatusEffect(FP_Effects.VULNERABILITY))
-                newAmount += (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(FP_Effects.VULNERABILITY).getAmplifier() + 1)));
-
             // Magic focus
             // Changes the value of newAmount to add more damage
             // Not effecting when attacker damages himself
@@ -88,17 +82,21 @@ public abstract class LivingEntityMixin {
             // Return damage to the attacker
             if(livingEntity.hasStatusEffect(FP_Effects.COUNTER))
                 attacker.damage(attacker.getDamageSources().indirectMagic(attacker, livingEntity), (float) (newAmount * 0.2) + livingEntity.getStatusEffect(FP_Effects.COUNTER).getAmplifier() + 1);
-
-            //Magic Shielding
-            // Reduces damage done
-            if (livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC))
-                newAmount -= ((livingEntity.getStatusEffect(FP_Effects.MAGIC_SHIELDING).getAmplifier() + 1) * Config.getFloat("magic_shielding.damage"));
-
-            // Inmortality
-            // Makes the entity invulnerable
-            if(livingEntity.hasStatusEffect(FP_Effects.INMORTALITY))
-                newAmount = 0;
-            cir.setReturnValue(newAmount);
         }
+        // Vulnerability
+        // Changes the value of newAmount to add more damage
+        if(livingEntity.hasStatusEffect(FP_Effects.VULNERABILITY))
+            newAmount += (cir.getReturnValue() + (cir.getReturnValue() * (0.2 * livingEntity.getStatusEffect(FP_Effects.VULNERABILITY).getAmplifier() + 1)));
+        
+        //Magic Shielding
+        // Reduces damage done
+        if (livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.INDIRECT_MAGIC) || livingEntity.hasStatusEffect(FP_Effects.MAGIC_SHIELDING) && source.isOf(DamageTypes.MAGIC))
+            newAmount -= ((livingEntity.getStatusEffect(FP_Effects.MAGIC_SHIELDING).getAmplifier() + 1) * Config.getFloat("magic_shielding.damage"));
+
+        // Inmortality
+        // Makes the entity invulnerable
+        if(livingEntity.hasStatusEffect(FP_Effects.INMORTALITY))
+            newAmount = 0;
+        cir.setReturnValue(newAmount);
     }
 }
